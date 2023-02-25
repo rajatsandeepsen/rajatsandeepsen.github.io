@@ -1,2 +1,1 @@
-# intro-to-nextjs
-just trying out the NEXT.js
+![img](https://github.com/rajatsandeepsen/rajatsandeepsen/blob/main/main.png?raw=true)
