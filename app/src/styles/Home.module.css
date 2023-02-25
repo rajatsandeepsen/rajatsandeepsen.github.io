@@ -1,0 +1,356 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.domainLogo {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.domainLogo img {
+  max-height:30px ;
+  width: auto;
+  transition: all 0.2s ease-out;
+}
+
+
+.newgrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 0
+}
+
+.spanner {
+  font-size: smaller;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+  padding: 0 1rem;
+}
+
+.code {
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.card span {
+  display: inline-block;
+  transition: all 200ms;
+}
+
+.card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.card p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.center section {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  padding: 0;
+}
+
+.center::before {
+  background: var(--primary-glow);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+  z-index: -1;
+  animation: transform 10s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+}
+
+.center section::before {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 180px;
+  height: 360px;
+  z-index: -1;
+  animation: 
+    transform 20s ease-in-out infinite both alternate,
+    movement_one 10s ease-in-out infinite both;
+  }
+  
+  .center section::after {
+    background: var(--primary-glow);
+    animation: transform 10s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+}
+
+.center::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+  animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_one 40s ease-in-out infinite both;
+}
+
+.center section::before,
+.center section::after,
+.center::before,
+.center::after {
+  content: '';
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+
+.logo,
+.thirteen {
+  position: relative;
+}
+
+.thirteen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 25px 10px;
+  margin-left: 16px;
+  transform: translateZ(0);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0px 2px 8px -1px #0000001a;
+}
+
+.thirteen::before,
+.thirteen::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+/* Conic Gradient Animation */
+.thirteen::before {
+  animation: 6s rotate linear infinite;
+  width: 200%;
+  height: 200%;
+  background: var(--tile-border);
+}
+
+/* Inner Square */
+.thirteen::after {
+  inset: 0;
+  padding: 1px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--tile-start-rgb), 1),
+    rgba(var(--tile-end-rgb), 1)
+  );
+  background-clip: content-box;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(10px);
+  }
+
+  .domainLogo:hover {
+    background: rgba(var(--card-rgb), 0.1);
+      border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+  .domainLogo:hover img{
+    max-height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .thirteen::before {
+    animation: none;
+  }
+
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .newgrid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .newgrid div {
+    width: 100%;
+  }
+  .main {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+    width: 100%;
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .card {
+    width: 100%;
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .center {
+    padding: 2rem;
+  }
+  
+  .center section{
+    font-size: medium;
+  }
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+  .description h2 {
+    display: none;
+  }
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .main {
+    padding-top: 1rem;
+  }
+  
+  .center{
+    margin: 0;
+  }
+  .center section{
+    font-size: large;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newgrid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo,
+  .thirteen img {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
+}
