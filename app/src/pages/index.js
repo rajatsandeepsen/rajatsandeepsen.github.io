@@ -28,6 +28,7 @@ export default function Home() {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="short icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
@@ -35,7 +36,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
         <Image
-        src="/rajat.png"
+        src="/favicon.ico"
         alt="Rajat Logo R"
         width={70}
         height={70}
