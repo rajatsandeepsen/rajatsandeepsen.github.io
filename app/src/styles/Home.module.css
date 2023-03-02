@@ -24,6 +24,11 @@
   transition: all 0.2s ease-out;
 }
 
+.domainLogo i {
+  font-size: 2rem;
+  color: var(--primary);
+  transition: all 0.2s ease-out;
+}
 
 .newgrid {
   display: grid;
@@ -222,6 +227,9 @@
   }
   .domainLogo:hover img{
     max-height: 40px;
+  }
+  .domainLogo:hover i{
+    font-size: 3rem;
   }
 }
 
