@@ -105,5 +105,9 @@ a {
   html {
     color-scheme: dark;
   }
-}
+}  
 
+nav, nav div{
+  width: 100%;
+  margin: 0 auto;
+}
