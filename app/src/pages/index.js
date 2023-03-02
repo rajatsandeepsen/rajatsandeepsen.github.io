@@ -34,22 +34,12 @@ export default function Home() {
 
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-        <Image
-        src="/favicon.ico"
-        alt="Rajat Logo R"
-        width={70}
-        height={70}
-        priority
-        />
-        <h2 className={domine.className}>Rajat Sandeep</h2>
-        </div>
-
         <div className={styles.center }>
         <section>
             <h6 className={domine.className}>(not yet)</h6>
             <h1 className={domine.className}>Full Stack Developer</h1>
             <h4 className={domine.className}>Tools used so far</h4>
+            <a href="/works">works</a>
         </section>
           <div className={styles.newgrid}>
               <div className={styles.domainLogo}><Image src="/html.png" width={90} height={90} /></div>
