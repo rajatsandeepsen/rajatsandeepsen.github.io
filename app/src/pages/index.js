@@ -5,6 +5,8 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
+const addClasses = (className) =>  className.split(' ').map(c => styles[c]).join(' ')
+
 export default function Home() {
   return (
     <>
@@ -12,6 +14,7 @@ export default function Home() {
         <section>
             <h1 className={domine.className}>Full Stack Developer</h1>
             <h4 className={domine.className}>Tools used so far</h4>
+            
         </section>
           <div className={styles.newgrid}>
               <div title='Html' className={styles.domainLogo}><Image src="/html.png" width={90} height={90} /></div>
@@ -36,7 +39,17 @@ export default function Home() {
               <div title='Figma' className={styles.domainLogo}><Image src="/figma.png" width={80} height={80} /></div>
               <div title='ElectronJS' className={styles.domainLogo}><Image src="/electron.svg" width={100} height={90} /></div>
           
-              
+              <div className={styles.gridFull}>
+                <div className={addClasses("card")}>
+                  <h5 className={domine.className}>View my Projects <span><i className='bi bi-chevron-right'></i></span></h5>      
+                </div>
+                <div className={addClasses("card shake")}>
+                  <h5 className={domine.className}>Contact Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
+                </div>
+                <div className={addClasses("card shake")}>
+                  <h5 className={domine.className}><span><i className='bi bi-envelope-fill'></i></span></h5>      
+                </div>
+              </div>
           </div>
         </div>
 

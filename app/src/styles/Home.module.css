@@ -29,12 +29,6 @@
   color: var(--primary);
   transition: all 0.2s ease-out;
 }
-.domainLogo[title]:hover::after {
-  content: attr(title);
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
 
 .newgrid {
   display: grid;
@@ -70,10 +64,17 @@
   padding: 1rem;
   gap: 1rem;
 }
-
+.gridFull {
+  margin-top: 1rem;
+  width: 100%;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 .card {
   padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
+  border-radius: 8px;
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
@@ -224,6 +225,7 @@
 
   .card:hover span {
     transform: translateX(10px);
+    
   }
 
   .domainLogo:hover {
@@ -403,4 +405,16 @@
     padding: 0;
     padding-top: 2rem;
   }
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shake:hover span{
+  animation: .25s tilt-shaking infinite;
 }
