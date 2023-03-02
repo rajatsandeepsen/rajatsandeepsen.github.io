@@ -11,6 +11,11 @@ const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
 export default function NotFound() {
+    useEffect(()=>{
+        setTimeout(()=>{
+            location.href = '/'
+        }, 5000)
+    }, [])
 
   return (
         <>
@@ -21,7 +26,7 @@ export default function NotFound() {
             <h4 className={domine.className}>Page not Found</h4> <br></br>
             <div className={styles.card}>
             
-            <h4 className={domine.className}> <i className='bi bi-chevron-left'></i> Go Back</h4>
+            <Link href="/"><h4 className={domine.className}> <i className='bi bi-chevron-left'></i> Go Back</h4></Link>
                 
             </div>
             </section>
