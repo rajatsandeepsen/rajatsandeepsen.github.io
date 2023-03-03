@@ -2,10 +2,12 @@ import Image from 'next/image'
 import { Inter, Poppins } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+
 const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
 const addClasses = (className) =>  className.split(' ').map(c => styles[c]).join(' ')
+const data=[{"title":"Javascript","src":"/javascript.png"},{"title":"HTML","src":"/html.png"},{"title":"CSS","src":"/css.png"},{"title":"ReactJS","src":"/react.png"},{"title":"Tailwind-CSS","src":"/tailwind-logo.png"},{"title":"Webpack","src":"/webpack.png"},{"title":"Firebase","src":"/firebase.png"},{"title":"Bootstrap","src":"/boostrap.svg"},{"title":"Node","src":"/node.png"},{"title":"ExpressJS","src":"/express.png"},{"title":"Vite","src":"/vite.png"},{"title":"NextJS","src":"/next.png"},{"title":"Vercel","src":"/vercel.png"},{"title":"Sass","src":"/sass.png"},{"title":"Git","src":"/git.png"},{"title":"Github","src":"/github.png"},{"title":"Unity","src":"/unity.png"},{"title":"VSCode","src":"/vscode.png"},{"title":"Notion","src":"/notion.png"},{"title":"Figma","src":"/figma.png"},{"title":"ElectronJS","src":"/electron.svg"}]
 
 export default function Home() {
   return (
@@ -17,39 +19,23 @@ export default function Home() {
             
         </section>
           <div className={styles.newgrid}>
-              <div title='Html' className={styles.domainLogo}><Image src="/html.png" width={90} height={90} /></div>
-              <div title='CSS' className={styles.domainLogo}><Image src="/css.png" width={90} height={90} /></div>
-              <div title='Javascript' className={styles.domainLogo}><Image src="/javascript.png" width={80} height={80} /></div>
-              <div title='ReactJS' className={styles.domainLogo}><Image src="/react.png" width={90} height={80} /></div>
-              <div title='Tailwind-CSS' className={styles.domainLogo}><Image src="/tailwind-logo.png" width={90} height={90} /></div>
-              <div title='Webpack' className={styles.domainLogo}><Image src="/webpack.png" width={80} height={80} /></div>
-              <div title='Firebase' className={styles.domainLogo}><Image src="/firebase.png" width={70} height={90} /></div>
-              <div title='Bootstrap' className={styles.domainLogo}><Image src="/boostrap.svg" width={85} height={70} /></div>
-              <div title='NodeJS' className={styles.domainLogo}><Image src="/node.png" width={70} height={80} /></div>
-              <div title='ExpressJS' className={styles.domainLogo}><Image src="/express.png" width={90} height={90} /></div>
-              <div title='Vite' className={styles.domainLogo}><Image src="/vite.png" width={90} height={90} /></div>
-              <div title='Nextjs' className={styles.domainLogo}><Image src="/next.png" width={90} height={90} /></div>
-              <div title='Vercel' className={styles.domainLogo}><Image src="/vercel.png" width={90} height={90} /></div>
-              <div title='Sass' className={styles.domainLogo}><Image src="/sass.png" width={90} height={70} /></div>
-              <div title='Git' className={styles.domainLogo}><Image src="/git.png" width={80} height={80} /></div>
-              <div title='Github' className={styles.domainLogo}><Image src="/github.png" width={80} height={80} /></div>
-              <div title='Unity' className={styles.domainLogo}><Image src="/unity.png" width={80} height={80} /></div>
-              <div title='VS Code' className={styles.domainLogo}><Image src="/vscode.png" width={80} height={80} /></div>
-              <div title='Notion' className={styles.domainLogo}><Image src="/notion.png" width={80} height={80} /></div>
-              <div title='Figma' className={styles.domainLogo}><Image src="/figma.png" width={80} height={80} /></div>
-              <div title='ElectronJS' className={styles.domainLogo}><Image src="/electron.svg" width={100} height={90} /></div>
-          
+
+              {data.map((x)=>{
+                return <div title={x.title} className={styles.domainLogo}><Image src={x.src} width={100} height={100} /></div>  
+              })}
+              
               <div className={styles.gridFull}>
-                <div className={addClasses("card")}>
-                  <h5 className={domine.className}>View my Projects <span><i className='bi bi-chevron-right'></i></span></h5>      
-                </div>
-                <div className={addClasses("card shake")}>
-                  <h5 className={domine.className}>Contact Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
-                </div>
-                <div className={addClasses("card shake")}>
-                  <h5 className={domine.className}><span><i className='bi bi-envelope-fill'></i></span></h5>      
-                </div>
+              <div className={addClasses("card")}>
+                <h5 className={domine.className}>View my Projects <span><i className='bi bi-chevron-right'></i></span></h5>      
               </div>
+              <div className={addClasses("card shake")}>
+                <h5 className={domine.className}>Contact Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
+              </div>
+              <div className={addClasses("card shake")}>
+                <h5 className={domine.className}><span><i className='bi bi-envelope-fill'></i></span></h5>      
+              </div>
+            </div>
+
           </div>
         </div>
 
