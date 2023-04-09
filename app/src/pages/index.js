@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Inter, Poppins } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import { useEffect, useState } from 'react'
+import Skills from './fetchskill'
+
 const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
@@ -12,11 +14,6 @@ const addClasses = (className) =>  className.split(' ').map(c => styles[c]).join
 export default function Home() {
   const [data, setData] = useState(null)
 
-  useEffect(() => {
-    fetch('/api/skills')
-    .then(res => res.json())
-    .then(data => setData(data))
-  },[])
 
   return (
     <>
@@ -26,21 +23,19 @@ export default function Home() {
             <h4 className={domine.className}>Tools used so far</h4>
         </section>
           <div className={styles.newgrid}>
-
-              {!data? void(0) : data.map((x)=>{
-                return <li title={x.title} className={styles.domainLogo}><Image src={x.src} width={100} height={100} /></li>  
-              })}
+              
+              <Skills/>
               
               <div className={styles.gridFull}>
-              <div className={addClasses("card")}>
-                <h5 className={domine.className}>View my Projects <span><i className='bi bi-chevron-right'></i></span></h5>      
-              </div>
-              <div className={addClasses("card shake")}>
-                <h5 className={domine.className}>Contact Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
-              </div>
-              <div className={addClasses("card shake")}>
-                <h5 className={domine.className}><span><i className='bi bi-envelope-fill'></i></span></h5>      
-              </div>
+                <div className={addClasses("card")}>
+                  <h5 className={domine.className}>View my Projects <span><i className='bi bi-chevron-right'></i></span></h5>      
+                </div>
+                <div className={addClasses("card shake")}>
+                  <h5 className={domine.className}>Contact Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
+                </div>
+                <div className={addClasses("card shake")}>
+                  <h5 className={domine.className}><span><i className='bi bi-envelope-fill'></i></span></h5>      
+                </div>
             </div>
 
           </div>

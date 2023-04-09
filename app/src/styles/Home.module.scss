@@ -33,7 +33,8 @@
 .newgrid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 0
+  grid-gap: 0;
+  place-items: center;
 }
 
 .spanner {
@@ -417,4 +418,28 @@
 
 .shake:hover span{
   animation: .25s tilt-shaking infinite;
+}
+
+
+.spinnerborder {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  div {
+    margin: 4rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 4px solid #fff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+  }
+}
+
+
+
+@keyframes spinner-border {
+  to { transform: rotate(360deg); }
 }
