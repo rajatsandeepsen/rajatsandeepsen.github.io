@@ -1,27 +1,34 @@
 import Image from 'next/image'
 import { Inter, Poppins } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-
+import styles from '@/styles/Home.module.scss'
+import { useEffect, useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
 const addClasses = (className) =>  className.split(' ').map(c => styles[c]).join(' ')
-const data=[{"title":"Javascript","src":"/javascript.png"},{"title":"HTML","src":"/html.png"},{"title":"CSS","src":"/css.png"},{"title":"ReactJS","src":"/react.png"},{"title":"Tailwind-CSS","src":"/tailwind-logo.png"},{"title":"Webpack","src":"/webpack.png"},{"title":"Firebase","src":"/firebase.png"},{"title":"Bootstrap","src":"/boostrap.svg"},{"title":"Node","src":"/node.png"},{"title":"ExpressJS","src":"/express.png"},{"title":"Vite","src":"/vite.png"},{"title":"NextJS","src":"/next.png"},{"title":"Vercel","src":"/vercel.png"},{"title":"Sass","src":"/sass.png"},{"title":"Git","src":"/git.png"},{"title":"Github","src":"/github.png"},{"title":"Unity","src":"/unity.png"},{"title":"VSCode","src":"/vscode.png"},{"title":"Notion","src":"/notion.png"},{"title":"Figma","src":"/figma.png"},{"title":"ElectronJS","src":"/electron.svg"}]
+
+
 
 export default function Home() {
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    fetch('/api/skills')
+    .then(res => res.json())
+    .then(data => setData(data))
+  },[])
+
   return (
     <>
         <div className={styles.center }>
         <section>
             <h1 className={domine.className}>Full Stack Developer</h1>
             <h4 className={domine.className}>Tools used so far</h4>
-            
         </section>
           <div className={styles.newgrid}>
 
-              {data.map((x)=>{
-                return <div title={x.title} className={styles.domainLogo}><Image src={x.src} width={100} height={100} /></div>  
+              {!data? void(0) : data.map((x)=>{
+                return <li title={x.title} className={styles.domainLogo}><Image src={x.src} width={100} height={100} /></li>  
               })}
               
               <div className={styles.gridFull}>
@@ -50,7 +57,7 @@ export default function Home() {
                Github &nbsp;<span><i className='bi bi-github'></i></span>
             </h2>
             <p className={inter.className}>
-              I been using Github for a while now.<br></br>I have a few projects on Github.
+              I have a lots of projects on Github.
             </p>
           </a>
 
@@ -64,7 +71,7 @@ export default function Home() {
              Instagram &nbsp;<span><i className='bi bi-instagram'></i></span>
           </h2>
           <p className={inter.className}>
-            I don't like to showoff<br></br>But I do like to share my work progress.
+            I do like to share my work progress here.
           </p>
         </a>
 
@@ -78,7 +85,7 @@ export default function Home() {
            Twitter &nbsp;<span><i className='bi bi-twitter'></i></span>
         </h2>
         <p className={inter.className}>
-          New to the twitter world. <br></br>But I like to share my thoughts on it.
+          I like to share my thoughts & ideas on it.
         </p>
       </a>
 
@@ -92,7 +99,7 @@ export default function Home() {
          Linkedin &nbsp;<span><i className='bi bi-linkedin'></i></span>
       </h2>
       <p className={inter.className}>
-        I been using Linkedin for a while now.<br></br> Connect with Me.
+        Connect with Me. For any work or collaboration.
       </p>
     </a>
         </div>

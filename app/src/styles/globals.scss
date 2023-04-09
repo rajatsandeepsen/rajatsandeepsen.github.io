@@ -34,6 +34,7 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+
 }
 
 @media (prefers-color-scheme: dark ) {
@@ -110,4 +111,25 @@ a {
 nav, nav div{
   width: 100%;
   margin: 0 auto;
+}
+
+
+.cursor {
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	z-index: 100;
+	&--large {
+		--size: 40px;
+		border: 1px solid rgb(255, 60, 60);
+	}
+	&--small {
+		--size: 10px;
+		background: rgb(255, 60, 60);
+	transform: translate(-50%, -50%);
+	}
 }
