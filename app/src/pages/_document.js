@@ -5,7 +5,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Rajat Sandeep</title>
         <AllMeta/>
         <link rel="icon" href="/favicon.ico" />
         <link rel="short icon" href="/favicon.ico" />

@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import { useEffect, useState } from 'react'
 import Skills from './fetchskill'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
@@ -17,6 +18,9 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+      <title>Rajat Sandeep</title>
+    </Head>
         <div className={styles.center }>
         <section>
             <h1 className={domine.className}>Full Stack Developer</h1>
@@ -80,7 +84,7 @@ export default function Home() {
            Twitter &nbsp;<span><i className='bi bi-twitter'></i></span>
         </h2>
         <p className={inter.className}>
-          I like to share my thoughts & ideas on it.
+          I like to share my thoughts & ideas.
         </p>
       </a>
 

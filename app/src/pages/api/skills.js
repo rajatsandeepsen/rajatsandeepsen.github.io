@@ -22,11 +22,14 @@ const data = [
   { title: "Figma", src: "/figma.png" },
   { title: "ElectronJS", src: "/electron.svg" },
   { title: "Typescript", src: "/typescript.png" },
+  { title: "UIPath Studio", src: "/uipath.png" },
 ];
 
 export default function handler(req, res) {
-  
-  res.status(200).json(data);
+  setTimeout(() => {
+    
+    res.status(200).json(null);
+  }, 4000);
 
 }
 

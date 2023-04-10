@@ -422,15 +422,16 @@
 
 
 .spinnerborder {
-  width: 100vw;
+  grid-column: span 50 / auto ;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 200px;
   div {
-    margin: 4rem;
-    display: inline-block;
+    
+    display: block;
     width: 2rem;
     height: 2rem;
-    vertical-align: text-bottom;
     border: 4px solid #fff;
     border-right-color: transparent;
     border-radius: 50%;
