@@ -26,10 +26,8 @@ const data = [
 ];
 
 export default function handler(req, res) {
-  setTimeout(() => {
-    
-    res.status(200).json(null);
-  }, 4000);
+  
+  res.status(200).json(data);
 
 }
 

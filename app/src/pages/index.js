@@ -31,15 +31,15 @@ export default function Home() {
               <Skills/>
               
               <div className={styles.gridFull}>
-                <div className={addClasses("card")}>
+                <a href='https://github.com/rajatsandeepsen' className={addClasses("card")}>
                   <h5 className={domine.className}>View my Projects <span><i className='bi bi-chevron-right'></i></span></h5>      
-                </div>
-                <div className={addClasses("card shake")}>
-                  <h5 className={domine.className}>Contact Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
-                </div>
-                <div className={addClasses("card shake")}>
+                </a>
+                <a href='https://www.linkedin.com/in/rajatsandeepsen' className={addClasses("card shake")}>
+                  <h5 className={domine.className}>Connect Me <span><i className='bi bi-lightning-fill'></i></span></h5>      
+                </a>
+                <a href='mailto:rajatsandeepsen1839@gmail.com' className={addClasses("card shake")}>
                   <h5 className={domine.className}><span><i className='bi bi-envelope-fill'></i></span></h5>      
-                </div>
+                </a>
             </div>
 
           </div>
