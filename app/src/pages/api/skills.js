@@ -23,6 +23,7 @@ const data = [
   { title: "ElectronJS", src: "/electron.svg" },
   { title: "Typescript", src: "/typescript.png" },
   { title: "UIPath Studio", src: "/uipath.png" },
+  { title: "Prisma ORM", src: "/prisma.svg" },
 ];
 
 export default function handler(req, res) {
