@@ -1,1 +1,1 @@
-![img](https://github.com/rajatsandeepsen/rajatsandeepsen/blob/main/main.png?raw=true)
+![img](https://rajatsandeepsen.vercel.app/main.png)
