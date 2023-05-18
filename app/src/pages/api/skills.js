@@ -12,7 +12,6 @@ const data = [
   { title: "ExpressJS", src: "/express.png" },
   { title: "Vite", src: "/vite.png" },
   { title: "NextJS", src: "/next.png" },
-  { title: "Vercel", src: "/vercel.png" },
   { title: "Sass", src: "/sass.png" },
   { title: "Git", src: "/git.png" },
   { title: "Github", src: "/github.png" },
@@ -24,6 +23,7 @@ const data = [
   { title: "Typescript", src: "/typescript.png" },
   { title: "UIPath Studio", src: "/uipath.png" },
   { title: "Prisma ORM", src: "/prisma.svg" },
+  { title: "MySQL", src: "/MySQL.svg" },
 ];
 
 export default function handler(req, res) {
