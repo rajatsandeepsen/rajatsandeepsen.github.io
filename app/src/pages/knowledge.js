@@ -1,9 +1,5 @@
 import Image from 'next/image'
-import { Inter, Poppins } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
-
-const inter = Inter({ subsets: ['latin'] })
-const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
 const Knowledge = () => {
     return ( 

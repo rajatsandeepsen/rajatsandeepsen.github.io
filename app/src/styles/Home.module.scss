@@ -35,6 +35,7 @@
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 0;
   place-items: center;
+  margin: 1rem 0;
 }
 
 .spanner {
@@ -108,6 +109,15 @@
   gap: .5rem;
   position: relative;
   margin-bottom: 1.5rem;
+  p {
+    width: min(680px,100% );
+    font-size: .8rem;
+    opacity: .5;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 1.5rem;
+  }
 }
 
 .center section {
@@ -274,11 +284,11 @@
     margin-bottom: 30px;
     width: 100%;
     gap: 1rem;
-    justify-items: center;
+    // justify-items: center;
   }
 
   .card {
-    width: 100%;
+    
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
@@ -405,6 +415,12 @@
   .flexer {
     padding: 0;
     padding-top: 2rem;
+  }
+  .gridFull {
+    // flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
   }
 }
 

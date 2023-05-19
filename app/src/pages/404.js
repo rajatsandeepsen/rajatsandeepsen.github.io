@@ -1,19 +1,17 @@
-import Image from 'next/image'
-import { Inter, Poppins } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import { useRouter } from 'next/router';
 
-
-
-
-const inter = Inter({ subsets: ['latin'] })
 const domine = Poppins({ subsets: ['latin'], weight: '500' })
 
 export default function NotFound() {
+    const router = useRouter();
+
     useEffect(()=>{
         setTimeout(()=>{
-            location.href = '/'
+            router.back()
         }, 5000)
     }, [])
 

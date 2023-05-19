@@ -1,6 +1,6 @@
 import styles from '@/styles/Home.module.scss'
 import Image from 'next/image';
-import { Domine, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 
 const domine = Poppins({ subsets: ['latin'], weight: '500' })

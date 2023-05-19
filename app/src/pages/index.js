@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import { Inter, Poppins } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
-import { useEffect, useState } from 'react'
 import Skills from './fetchskill'
 import Head from 'next/head'
 
@@ -13,8 +11,6 @@ const addClasses = (className) =>  className.split(' ').map(c => styles[c]).join
 
 
 export default function Home() {
-  const [data, setData] = useState(null)
-
 
   return (
     <>
@@ -24,6 +20,7 @@ export default function Home() {
         <div className={styles.center }>
         <section>
             <h1 className={domine.className}>Full Stack Developer</h1>
+            <p className={domine.className}>Self-taught Designer & Full Stack Web Developer. Artificial Intelligence & Data Science Engineering Student at SJCET Palai</p>
             <h4 className={domine.className}>Tools used so far</h4>
         </section>
           <div className={styles.newgrid}>
@@ -43,7 +40,13 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
+          </div>
+          <div className={styles.center}>
+            <p className={domine.className}>
+              Technical Officer at IEDC SJCET Startup Bootcamp | Co-Tech Lead at UIPath Kerala Student Community | Web Lead at GDSC SJCET | Web Developer at IEEE SB SJCET
+            </p>
+          </div>
+
 
         <div className={styles.grid}>
           <a
