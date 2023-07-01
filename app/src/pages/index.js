@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           <div className={styles.center}>
             <p className={domine.className}>
-              Technical Officer at IEDC SJCET Startup Bootcamp | Co-Tech Lead at UIPath Kerala Student Community | Web Lead at GDSC SJCET | Web Developer at IEEE SB SJCET
+              Frontend Developer Intern at Gtech-Mulearn | Technical Officer at IEDC SJCET Startup Bootcamp | Co-Tech Lead at UIPath Kerala Student Community | Web Lead at GDSC SJCET | Ex Web Developer at IEEE SB SJCET
             </p>
           </div>
 

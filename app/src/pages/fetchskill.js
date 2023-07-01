@@ -25,7 +25,9 @@ const data = [
     { title: "Typescript", src: "/typescript.png" },
     { title: "UIPath Studio", src: "/uipath.png" },
     { title: "Prisma ORM", src: "/prisma.svg" },
+    { title: "Framer Motion", src: "/Framer.svg" },
     { title: "MySQL", src: "/MySQL.svg" },
+    { title: "NextAuth", src: "/nextauth.svg" },
   ];
 
 export default function Skills(){
