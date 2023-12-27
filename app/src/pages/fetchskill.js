@@ -28,7 +28,24 @@ const data = [
     { title: "Framer Motion", src: "/Framer.svg" },
     { title: "MySQL", src: "/MySQL.svg" },
     { title: "NextAuth", src: "/nextauth.svg" },
-  ];
+    { title: "Github Copilot", src: "/copilot.svg" },
+    { title: "DrizzleORM", src: "/drizzle.svg" },
+    { title: "Expo", src: "/expo.svg" },
+    { title: "Hoppschotch", src: "/hoppschotch.svg" },
+    { title: "Jwt", src: "/jwt.svg" },
+    { title: "Mongodb", src: "/mongodb.svg" },
+    { title: "Netlify", src: "/netlify.svg" },
+    { title: "Planetscale", src: "/planetscale.svg" },
+    { title: "Postgres", src: "/postgres.svg" },
+    { title: "Radix", src: "/radix.svg" },
+    { title: "React-Query", src: "/react-query.svg" },
+    { title: "shadcn/UI", src: "/shadcn.svg" },
+    { title: "Supabase", src: "/supabase.svg" },
+    { title: "tRPC.io", src: "/trpc.svg" },
+    { title: "turborepo", src: "/turborepo.svg" },
+    { title: "zod", src: "/zod.svg" },
+    { title: "T3-stack", src: "/t3-stack.svg" },
+  ].sort(() => Math.random() - 0.5);
 
 export default function Skills(){
     return (
