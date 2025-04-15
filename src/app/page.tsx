@@ -1,3 +1,4 @@
+import Gallary from "@/components/gallary";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -16,8 +17,8 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex flex-col-reverse justify-between items-start gap-10">
-            <div className="flex-col flex flex-1 space-y-1.5">
+          <div className="flex flex-col-reverse justify-between items-start gap-10">
+            <div className="flex-col flex flex-1 space-y-1.5 w-full">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -36,12 +37,7 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-40 border rounded-sm">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback className="rounded-sm">{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
+            <Gallary/>
           </div>
         </div>
       </section>
