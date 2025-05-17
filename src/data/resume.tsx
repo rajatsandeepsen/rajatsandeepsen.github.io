@@ -166,6 +166,18 @@ export const DATA = {
         "Co-founded the company and worked on the development of the Product, ShowMyAds",
     },
     {
+      company: "Beckn Protocol",
+      href: "https://becknprotocol.io",
+      badges: [],
+      location: "Hybrid",
+      title: "GenAI Developer (Intern)",
+      logoUrl: "https://github.com/beckn.png",
+      start: "May 2025",
+      end: "May 2025",
+      description:
+        "Published language specific client packages and built Agentic Server for new DEG project",
+    },
+    {
       company: "Gtech Mulearn",
       href: "https://mulearn.org",
       badges: [],
