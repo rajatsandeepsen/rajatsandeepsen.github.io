@@ -166,7 +166,7 @@ export const DATA = {
         "Co-founded the company and worked on the development of the Product, ShowMyAds",
     },
     {
-      company: "Beckn Protocol",
+      company: "FIDE - Beckn Protocol",
       href: "https://becknprotocol.io",
       badges: [],
       location: "Hybrid",
