@@ -47,7 +47,7 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {`${DATA.summary} \n From [${DATA.location}](${DATA.locationLink})`}
+            {`${DATA.summary} \n\n From [${DATA.location}](${DATA.locationLink})\n\n Resume [Here](${DATA.resume})`}
           </Markdown>
         </BlurFade>
       </section>
