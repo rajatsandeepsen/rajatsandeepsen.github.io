@@ -1,13 +1,13 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ProjectData } from "@/data/projects";
+import { AllProjectsData, ProjectData } from "@/data/projects";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
 	const projects = Object.entries(ProjectData);
-	const allProject = projects.flatMap(([_, projects]) => projects);
+	const allProject = AllProjectsData;
 	const categories = projects.map((p) => p[0]);
 
 	return (
@@ -29,7 +29,10 @@ export default function Page() {
 							</div>
 						</div>
 					</BlurFade>
-					<Tabs defaultValue="all" className="max-w-[800px] mx-auto">
+					<Tabs
+						defaultValue="all"
+						className="max-w-[800px] w-full mx-auto items-center flex flex-col"
+					>
 						<BlurFade delay={BLUR_FADE_DELAY * 2}>
 							<TabsList className="mb-5">
 								<TabsTrigger value="all">All</TabsTrigger>

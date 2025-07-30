@@ -18,6 +18,35 @@ interface Project {
 	video: string;
 }
 
+const insightProject = {
+	title: "Insight - AI WhatsApp Agent",
+	href: "https://github.com/rajatsandeepsen/insight",
+	tweet: "",
+	active: true,
+	description:
+		"Self-hostable AI enabled WhatsApp Agent. An open-source alternative to Zoko, featuring Docker support, Redis, and integration with Vercel AI SDK, Groq AI, and Llama3.",
+	technologies: [
+		"TypeScript",
+		"JavaScript",
+		"Docker",
+		"Redis",
+		"Vercel AI SDK",
+		"Groq AI",
+		"Llama3",
+		"Bun"
+	],
+	links: [
+		{
+			type: "Source",
+			href: "https://github.com/rajatsandeepsen/insight",
+			icon: <Icons.github className="size-3" />,
+		},
+	],
+	image:
+		"https://opengraph.githubassets.com/534888812d0a5dbba644aa7b24086389a82f15d759c869e1198d0d5f852ee5dd/rajatsandeepsen/insight",
+	video: "",
+} satisfies Project;
+
 const luttapiProject = {
 	title: "LUTTAPI",
 	tweet: "",
@@ -596,6 +625,37 @@ const portfolioProject = {
 	video: "",
 } satisfies Project;
 
+const adsjcetProject = {
+	title: "Official Website of ADSA SJCET Palai",
+	tweet: "",
+	href: "https://adsa.sjcetpalai.ac.in",
+	active: true,
+	description:
+		"Official website for the Artificial Intelligence & Data Science Students Association at SJCET Palai. Built with Next.js, TypeScript, TailwindCSS, Framer Motion, and shadcn-ui. Deployed on Vercel.",
+	technologies: [
+		"Next.js",
+		"TypeScript",
+		"TailwindCSS",
+		"Framer Motion",
+		"shadcn-ui",
+		"Vercel",
+	],
+	links: [
+		{
+			type: "Website",
+			href: "https://adsa.sjcetpalai.ac.in",
+			icon: <Icons.globe className="size-3" />,
+		},
+		{
+			type: "Source",
+			href: "https://github.com/ADSJCET/web",
+			icon: <Icons.github className="size-3" />,
+		},
+	],
+	image: "",
+	video: "",
+} satisfies Project;
+
 const scriptWriterProject = {
 	title: "Script Writer",
 	tweet: "",
@@ -670,6 +730,43 @@ const heliosBrowserProject = {
 	video: "",
 } satisfies Project;
 
+const betterStarterKitProject: Project = {
+	title: "Better Starter Kit",
+	href: "https://github.com/rajatsandeepsen/better-starter-kit",
+	tweet:
+		"A modern starter kit for full-stack apps with Next.js, TailwindCSS, Drizzle ORM (Postgres), oRPC, Shadcn-UI, Better-Auth, Bun, and Biome. 🚀",
+	active: true,
+	description:
+		"Better T3 Biome Bun Starter Kit with Next.js, TailwindCSS, Drizzle ORM (Postgres), oRPC, Shadcn-UI, and Better-Auth. Designed for rapid, scalable, and modern web app development with a batteries-included approach.",
+	technologies: [
+		"Next.js",
+		"TailwindCSS",
+		"Drizzle ORM",
+		"PostgreSQL",
+		"oRPC",
+		"Shadcn-UI",
+		"Better-Auth",
+		"Bun",
+		"Biome",
+		"TypeScript",
+		"Docker",
+	],
+	links: [
+		{
+			type: "Website",
+			href: "https://github.com/rajatsandeepsen/better-starter-kit",
+			icon: <Icons.globe className="size-3" />,
+		},
+		{
+			type: "Source",
+			href: "https://github.com/rajatsandeepsen/better-starter-kit",
+			icon: <Icons.github className="size-3" />,
+		},
+	],
+	image: "/rajat.png",
+	video: "",
+};
+
 export const ProjectData = {
 	genAI: [
 		luttapiProject,
@@ -682,6 +779,7 @@ export const ProjectData = {
 		sarvamAiSdkProject,
 		mindEaseProject,
 		heliosBrowserProject,
+		insightProject,
 	],
 	ML: [],
 	tools: [
@@ -693,14 +791,12 @@ export const ProjectData = {
 		openEditorProject,
 		magicUiProject,
 	],
-	devOps: [],
-	backend: [
-	    asthraWebsiteProject,
-		heliosBrowserProject,
-	],
+	devOps: [betterStarterKitProject, insightProject],
+	backend: [asthraWebsiteProject, heliosBrowserProject],
 	frontend: [
-	    luttapiProject,
+		luttapiProject,
 		tedxSjcetProject,
+		adsjcetProject,
 		// iedcSjcetProject,
 		asthraWebsiteProject,
 		// ieeeSjcetProject,
@@ -708,3 +804,28 @@ export const ProjectData = {
 		scriptWriterProject,
 	],
 } satisfies ProjectCategories;
+
+export const AllProjectsData = [
+	luttapiProject,
+	fileSphereProject,
+	transactionsProject,
+	newsRagProject,
+	mcpMobileProject,
+	initiativeProject,
+	openEditorProject,
+	sarvamAiSdkProject,
+	mindEaseProject,
+	heliosBrowserProject,
+	mcmdProject,
+	insightProject,
+	interphaseProject,
+	becknTypeScriptProject,
+	magicUiProject,
+	tedxSjcetProject,
+	adsjcetProject,
+	// iedcSjcetProject,
+	asthraWebsiteProject,
+	// ieeeSjcetProject,
+	portfolioProject,
+	scriptWriterProject,
+];

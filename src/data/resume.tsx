@@ -1,4 +1,4 @@
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, CodeIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 export const DATA = {
@@ -34,6 +34,7 @@ export const DATA = {
 	platforms: ["Cloudflare", "Vercel", "HuggingFace", "GitHub", "VPS"],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
+		{ href: "/projects", icon: CodeIcon, label: "Projects" },
 		// { href: "/blog", icon: NotebookIcon, label: "Blog" },
 	],
 	contact: {
