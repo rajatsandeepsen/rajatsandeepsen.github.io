@@ -145,7 +145,7 @@ export const TweetHeader = ({ tweet }: { tweet: EnrichedTweet }) => (
 );
 
 export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
-  <div className="break-words leading-normal tracking-tighter">
+  <pre className="break-words p-0 text-sm inline font-sans tracking-tight">
     {tweet.entities.map((entity, idx) => {
       switch (entity.type) {
         case "url":
@@ -158,7 +158,7 @@ export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
               href={entity.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-normal text-gray-500"
+              className="text-gray-500"
             >
               <span>{entity.text}</span>
             </a>
@@ -167,13 +167,13 @@ export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
           return (
             <span
               key={idx}
-              className="text-sm font-normal"
+              className=""
               dangerouslySetInnerHTML={{ __html: entity.text }}
             />
           );
       }
     })}
-  </div>
+  </pre>
 );
 
 export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
@@ -196,13 +196,13 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
       {tweet.photos && (
         <div className="relative flex transform-gpu snap-x snap-mandatory gap-4 overflow-x-auto">
           <div className="shrink-0 snap-center sm:w-2" />
-          {tweet.photos.map((photo) => (
+          {tweet.photos.map((photo, i, c) => (
             <img
               key={photo.url}
               src={photo.url}
               title={"Photo by " + tweet.user.name}
               alt={tweet.text}
-              className="h-64 w-5/6 shrink-0 snap-center snap-always rounded-xl border object-cover shadow-sm"
+              className={cn("shrink-0 snap-center snap-always rounded-xl border object-cover shadow-sm", c.length > 1 ? "w-10/12" : "w-11/12")}
             />
           ))}
           <div className="shrink-0 snap-center sm:w-2" />

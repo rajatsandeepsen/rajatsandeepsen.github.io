@@ -1,4 +1,4 @@
-import { ProjectData } from "@/data/projects";
+import { AllProjectsData } from "@/data/projects";
 
 interface OGPreview {
   title: string;
@@ -34,11 +34,7 @@ export async function getOGPreview(url: string): Promise<OGPreview> {
   return preview;
 }
 
-const allProject = Object.entries(ProjectData).flatMap(
-	([_, projects]) => projects,
-);
-
-const ogPreviewPromises = allProject
+const ogPreviewPromises = AllProjectsData
   .map(async (project) => {
     const githubLinks = project.links.filter(link => link.href.includes("github.com"));
 

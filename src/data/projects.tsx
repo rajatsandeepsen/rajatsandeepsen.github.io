@@ -42,14 +42,13 @@ const insightProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/534888812d0a5dbba644aa7b24086389a82f15d759c869e1198d0d5f852ee5dd/rajatsandeepsen/insight",
+	image: "https://repository-images.githubusercontent.com/841859035/7295a27c-92b4-43ce-a524-f1bf335d0ca7",
 	video: "",
 } satisfies Project;
 
 const luttapiProject = {
 	title: "LUTTAPI",
-	tweet: "",
+	tweet: "1822760698109145533",
 	href: "https://github.com/rajatsandeepsen/LUTTAPI",
 
 	active: true,
@@ -77,8 +76,7 @@ const luttapiProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/534888812d0a5dbba644aa7b24086389a82f15d759c869e1198d0d5f852ee5dd/rajatsandeepsen/LUTTAPI",
+	image: "https://avatars.githubusercontent.com/u/117535918?s=280&amp;v=4",
 	video: "",
 } satisfies Project;
 
@@ -108,8 +106,7 @@ const fileSphereProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/782896336/1de9d31e-58d8-49c9-ba9f-ea70ac68a93c",
+	image: "https://repository-images.githubusercontent.com/782896336/1de9d31e-58d8-49c9-ba9f-ea70ac68a93c",
 	video: "",
 } satisfies Project;
 
@@ -137,14 +134,13 @@ const transactionsProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/634238c544b468371bf9cd8b65058eb84bb8ad62c29f62eebcff6185253c9350/rajatsandeepsen/transactions",
+	image: "https://opengraph.githubassets.com/634238c544b468371bf9cd8b65058eb84bb8ad62c29f62eebcff6185253c9350/rajatsandeepsen/transactions"   ,
 	video: "",
 } satisfies Project;
 
 const newsRagProject = {
 	title: "News RAG",
-	tweet: "",
+	tweet: "1888209845871858037",
 	href: "https://news-rag.vercel.app",
 
 	active: false,
@@ -173,14 +169,13 @@ const newsRagProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/13626b6c9f167674ca0208983516a8f26e7bc9e7ed0be325da160c3e02b112ed/rajatsandeepsen/news-rag",
+	image: "https://opengraph.githubassets.com/13626b6c9f167674ca0208983516a8f26e7bc9e7ed0be325da160c3e02b112ed/rajatsandeepsen/news-rag",
 	video: "",
 } satisfies Project;
 
 const mcpMobileProject = {
 	title: "MCP Mobile",
-	tweet: "",
+	tweet: "1913983194464161829",
 	href: "https://github.com/rajatsandeepsen/mcp-mobile",
 
 	active: true,
@@ -203,8 +198,7 @@ const mcpMobileProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/8e12bfefd962706588dc6fc5e2ff362f562b03e38414ce09f3d399ff190a93e3/rajatsandeepsen/mcp-mobile",
+	image: "https://opengraph.githubassets.com/8e12bfefd962706588dc6fc5e2ff362f562b03e38414ce09f3d399ff190a93e3/rajatsandeepsen/mcp-mobile",
 	video: "",
 } satisfies Project;
 
@@ -236,8 +230,7 @@ const initiativeProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/785114711/bcafb694-cde9-45a1-9f87-62780e86b6c1",
+	image: "https://repository-images.githubusercontent.com/785114711/4be8d46a-5c2f-4f2d-9913-a21e82364de3",
 	video: "",
 } satisfies Project;
 
@@ -270,14 +263,13 @@ const openEditorProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/fb5324f9d8345146277ee766cd6baa7199859059de35de3436a2872ce939f93b/rajatsandeepsen/open-editor",
+	image: "https://repository-images.githubusercontent.com/1006848072/992d8018-a754-4448-a650-db0a852bb1ef",
 	video: "",
 } satisfies Project;
 
 const sarvamAiSdkProject = {
 	title: "Sarvam AI SDK",
-	tweet: "",
+	tweet: "1928774981552582677",
 	href: "https://www.npmjs.com/package/sarvam-ai-sdk",
 
 	active: true,
@@ -303,14 +295,13 @@ const sarvamAiSdkProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/993589005/2eb2d1b2-db3b-484c-8920-3397799b1380",
+	image: "https://repository-images.githubusercontent.com/993589005/2eb2d1b2-db3b-484c-8920-3397799b1380",
 	video: "",
 } satisfies Project;
 
 const mindEaseProject = {
 	title: "MindEase",
-	tweet: "",
+	tweet: "1765842034261389417",
 	href: "https://github.com/nexussjcet/mindease",
 
 	active: true,
@@ -331,8 +322,7 @@ const mindEaseProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/143b68d6ee6fb8f8ec2e406f00a9cf2490087dd1b868e5007dbd737b87c84fec/nexussjcet/mindease",
+	image: "https://opengraph.githubassets.com/143b68d6ee6fb8f8ec2e406f00a9cf2490087dd1b868e5007dbd737b87c84fec/nexussjcet/mindease",
 	video: "",
 } satisfies Project;
 
@@ -364,8 +354,7 @@ const interphaseProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/680398557/aad00547-0bf1-4cf4-8431-17de100325fb",
+	image: "https://repository-images.githubusercontent.com/680398557/aad00547-0bf1-4cf4-8431-17de100325fb",
 	video: "",
 } satisfies Project;
 
@@ -398,8 +387,7 @@ const becknTypeScriptProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/7873f39ddedf2144a32993f45b93e87a8b96909ddbfe14ea17e8c9844f1cb45f/rajatsandeepsen/beckn-typescript",
+	image: "https://repository-images.githubusercontent.com/982672021/6c1d8ade-b3d3-4b0d-bc76-35aa6f3bf0d7",
 	video: "",
 } satisfies Project;
 
@@ -431,14 +419,13 @@ const mcmdProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/1007413292/ed201418-3220-400a-a2e8-dcc43925bac1",
+	image: "https://repository-images.githubusercontent.com/1007413292/ed201418-3220-400a-a2e8-dcc43925bac1",
 	video: "",
 } satisfies Project;
 
 const magicUiProject = {
 	title: "Magic UI",
-	tweet: "",
+	tweet: "1809988588462866535",
 	href: "https://magicui.design",
 
 	active: true,
@@ -466,14 +453,13 @@ const magicUiProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/71b5d8c2acc6497464a3784950b6e9f8a153490abcf8457a34a8287ed98c46a2/magicuidesign/magicui",
+	image: "https://opengraph.githubassets.com/2022ba899a6233db241917aab0b8d549d9cb754265aa7b8cab28156ce20f3a98/magicuidesign/magicui",
 	video: "https://cdn.magicui.design/bento-grid.mp4",
 } satisfies Project;
 
 const tedxSjcetProject = {
 	title: "TEDx SJCET Website",
-	tweet: "",
+	tweet: "1882996937751933410",
 	href: "https://tedx.sjcetpalai.ac.in",
 
 	active: false,
@@ -499,8 +485,7 @@ const tedxSjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/530770134/3b41c566-3d26-49c5-9915-eb8b0b596dca",
+	image: "https://repository-images.githubusercontent.com/530770134/3b41c566-3d26-49c5-9915-eb8b0b596dca",
 	video: "",
 } satisfies Project;
 
@@ -532,13 +517,13 @@ const iedcSjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://github.githubassets.com/assets/github-logo-55c5b9a1fe52.png",
+	image: "https://opengraph.githubassets.com/9b5fa4581b367322584e12694c6c723fb6942c0054c3d18f5bee5fcf3435a95a/Milansuman/Helios-Browser",
 	video: "",
 } satisfies Project;
 
 const asthraWebsiteProject = {
 	title: "ASTHRA Website",
-	tweet: "",
+	tweet: "1950387359566172489",
 	href: "https://asthra.sjcetpalai.ac.in",
 
 	active: true,
@@ -564,7 +549,7 @@ const asthraWebsiteProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://avatars.githubusercontent.com/u/117535918?s=280&amp;v=4",
+	image: "",
 	video: "",
 } satisfies Project;
 
@@ -589,13 +574,13 @@ const ieeeSjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://github.githubassets.com/assets/github-logo-55c5b9a1fe52.png",
+	image: "https://repository-images.githubusercontent.com/802692703/0834cd1a-d86d-4bb8-a5c6-18358b57d104",
 	video: "",
 } satisfies Project;
 
 const portfolioProject = {
 	title: "Personal Portfolio",
-	tweet: "",
+	tweet: "1912295868088349039",
 	href: "https://rajat.club",
 
 	active: true,
@@ -620,8 +605,7 @@ const portfolioProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/68364903649cfbc6451ad45802ac0c39f80f30c59f45215740aabe2204ebb504/rajatsandeepsen/rajatsandeepsen.github.io",
+	image: "https://repository-images.githubusercontent.com/961214783/eceab33a-a29f-4ba6-a36a-cb5c7eb26320",
 	video: "",
 } satisfies Project;
 
@@ -652,7 +636,7 @@ const adsjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "",
+	image: "https://repository-images.githubusercontent.com/701049580/cdd7b776-3cbd-414e-992f-9c2246079f1b",
 	video: "",
 } satisfies Project;
 
@@ -686,8 +670,7 @@ const scriptWriterProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://repository-images.githubusercontent.com/612582551/46cc05c8-3db1-4daa-9105-08b03ac286ad",
+	image: "https://repository-images.githubusercontent.com/612582551/46cc05c8-3db1-4daa-9105-08b03ac286ad",
 	video: "",
 } satisfies Project;
 
@@ -702,7 +685,7 @@ interface ProjectCategories {
 
 const heliosBrowserProject = {
 	title: "Helios Browser",
-	tweet: "",
+	tweet: "1832341524148863408",
 	href: "https://github.com/Milansuman/Helios-Browser",
 
 	active: true,
@@ -725,8 +708,7 @@ const heliosBrowserProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image:
-		"https://opengraph.githubassets.com/29f8b7f2e6e2e1b1e7e1a2c7e2e1b7f2e6e2e1b1e7e1a2c7e2e1b7f2e6e2e1b1/Milansuman/Helios-Browser",
+	image: "",
 	video: "",
 } satisfies Project;
 
@@ -763,7 +745,7 @@ const betterStarterKitProject: Project = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "/rajat.png",
+	image: "",
 	video: "",
 };
 
