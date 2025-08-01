@@ -10,8 +10,8 @@ export const DATA = {
 		"https://raw.githubusercontent.com/rajatsandeepsen/resume/refs/heads/main/main.pdf",
 	location: "Thodupuzha, Kerala 🇮🇳",
 	locationLink: "https://www.google.com/maps/place/thodupuzha",
-	description: "Freelancer (aka kinda jobless)",
-	summary: "DevOps - Full Stack Dev - AI Engineer - FOSS Enthusiast",
+	description: "CTO ⬟ Manolo",
+	summary: "DevOps - Full Stack Dev - AI Engineer - FOSS Enthusiast - Freelancer",
 	avatarUrl: "https://github.com/rajatsandeepsen.png",
 	languages: ["English", "Malayalam", "Typescript", "Python", "SQL"],
 	libraries: [

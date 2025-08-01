@@ -360,7 +360,7 @@ const interphaseProject = {
 
 const becknTypeScriptProject = {
 	title: "Beckn TypeScript",
-	tweet: "",
+	tweet: "1933135950160486776",
 	href: "https://www.npmjs.com/package/beckn-typescript",
 
 	active: true,
