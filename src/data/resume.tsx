@@ -1,4 +1,4 @@
-import { HomeIcon, NotebookIcon, CodeIcon } from "lucide-react";
+import { CodeIcon, HomeIcon, NotebookIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 export const DATA = {
@@ -11,7 +11,8 @@ export const DATA = {
 	location: "Thodupuzha, Kerala 🇮🇳",
 	locationLink: "https://www.google.com/maps/place/thodupuzha",
 	description: "CTO ⬟ Manolo",
-	summary: "DevOps - Full Stack Dev - AI Engineer - FOSS Enthusiast - Freelancer",
+	summary:
+		"DevOps - Full Stack Dev - App Dev - AI Engineer - FOSS Enthusiast - Freelancer",
 	avatarUrl: "https://github.com/rajatsandeepsen.png",
 	languages: ["English", "Malayalam", "Typescript", "Python", "SQL"],
 	libraries: [
@@ -22,7 +23,7 @@ export const DATA = {
 		"openCV",
 		"Tkinder",
 	],
-	frameworks: ["Next.js", "FastAPI", "DrizzleORM", "Expo", "tRPC", "Node.js"],
+	frameworks: ["Next.js", "FastAPI", "DrizzleORM", "Expo", "tRPC", "Node.js", "Hono", "oRPC", "Bun"],
 	tools: [
 		"Turborepo",
 		"Docker",
@@ -30,6 +31,7 @@ export const DATA = {
 		"PostgresSQL",
 		"Redis",
 		"Figma",
+		"Zed Editor",
 	],
 	platforms: ["Cloudflare", "Vercel", "HuggingFace", "GitHub", "VPS"],
 	navbar: [
@@ -38,42 +40,37 @@ export const DATA = {
 		// { href: "/blog", icon: NotebookIcon, label: "Blog" },
 	],
 	contact: {
-		email: "rajatsandeepsen1839@gmail.com",
+		email: "rajat@manolo.in",
 		tel: "919846101882",
 		social: {
 			GitHub: {
 				name: "GitHub",
 				url: "https://github.com/rajatsandeepsen",
 				icon: Icons.github,
-
 				navbar: true,
 			},
 			LinkedIn: {
 				name: "LinkedIn",
 				url: "https://linkedin.com/in/rajatsandeepsen",
 				icon: Icons.linkedin,
-
 				navbar: true,
 			},
 			X: {
 				name: "X",
 				url: "https://x.com/rajatsandeepsen",
 				icon: Icons.x,
-
 				navbar: true,
 			},
 			bluesky: {
 				name: "Bluesky",
 				url: "https://bsky.app/profile/rajat.club",
 				icon: Icons.bluesky,
-
 				navbar: true,
 			},
 			email: {
 				name: "Send Email",
 				url: "#",
 				icon: Icons.email,
-
 				navbar: false,
 			},
 		},
@@ -141,7 +138,7 @@ export const DATA = {
 
 	work: [
 		{
-			company: "Manolo Pvt Ltd.",
+			company: "Manolo Ventures",
 			href: "https://manolo.in",
 			badges: [],
 			location: "Hybrid",
@@ -150,7 +147,7 @@ export const DATA = {
 			start: "Jan 2025",
 			end: "Present",
 			description:
-				"Co-founded the company and worked on the development of the Product, ShowMyAds",
+				"Worked on various products like ShowMyAds, Jem, etc",
 		},
 		{
 			company: "FIDE - Beckn Protocol",
