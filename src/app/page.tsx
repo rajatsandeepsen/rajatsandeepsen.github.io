@@ -280,16 +280,7 @@ export default function Page() {
                   className="text-blue-500 hover:underline"
                 >
                   twitter
-                </Link>{" "}
-                or {" "}
-                <Link
-                  href={`https://api.whatsapp.com/send?phone=${DATA.contact.tel}&text=Hello!`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-500 hover:underline"
-                >
-                  whatsapp
-                </Link>{" "}
+                </Link>
               </p>
             </div>
           </BlurFade>
