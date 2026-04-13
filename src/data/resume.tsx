@@ -1,4 +1,4 @@
-import { CodeIcon, HomeIcon, NotebookIcon } from "lucide-react";
+import { CodeIcon, HomeIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 export const DATA = {
@@ -6,7 +6,7 @@ export const DATA = {
 	initials: "Rajat",
 	url: "https://rajat.club",
 	projects: "/projects",
-	resume:	"https://rajatsandeepsen.github.io/resume/",
+	resume: "https://rajatsandeepsen.github.io/resume/",
 	location: "Thodupuzha, Kerala 🇮🇳",
 	locationLink: "https://www.google.com/maps/place/thodupuzha",
 	description: "CTO ⬟ Manolo",
@@ -22,7 +22,17 @@ export const DATA = {
 		"openCV",
 		"Tkinder",
 	],
-	frameworks: ["Next.js", "FastAPI", "DrizzleORM", "Expo", "tRPC", "Node.js", "Hono", "oRPC", "Bun"],
+	frameworks: [
+		"Next.js",
+		"FastAPI",
+		"DrizzleORM",
+		"Expo",
+		"tRPC",
+		"Node.js",
+		"Hono",
+		"oRPC",
+		"Bun",
+	],
 	tools: [
 		"Turborepo",
 		"Docker",
@@ -137,6 +147,17 @@ export const DATA = {
 
 	work: [
 		{
+			company: "FindMyCrush App",
+			href: "https://findmycrush.app",
+			badges: [],
+			location: "Hybrid",
+			title: "Creator",
+			logoUrl: "https://findmycrush.app/logo.svg",
+			start: "Feb 2026",
+			end: "Present",
+			description: "Created a fun genz dating app for college students",
+		},
+		{
 			company: "Manolo Ventures",
 			href: "https://manolo.in",
 			badges: [],
@@ -145,8 +166,7 @@ export const DATA = {
 			logoUrl: "https://github.com/manolo-in.png",
 			start: "Jan 2025",
 			end: "Present",
-			description:
-				"Worked on various products like ShowMyAds, Jem, etc",
+			description: "Worked on various products like Jem, Manolo Capital etc",
 		},
 		{
 			company: "FIDE - Beckn Protocol",
@@ -158,7 +178,7 @@ export const DATA = {
 			start: "May 2025",
 			end: "May 2025",
 			description:
-				"Published language specific client packages and built Agentic Server for new DEG project",
+				"Published a TS package, MCPs and built Agentic Server for new DEG project",
 		},
 		{
 			company: "Gtech Mulearn",
