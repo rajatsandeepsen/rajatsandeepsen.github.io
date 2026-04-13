@@ -6,8 +6,7 @@ export const DATA = {
 	initials: "Rajat",
 	url: "https://rajat.club",
 	projects: "/projects",
-	resume:
-		"https://raw.githubusercontent.com/rajatsandeepsen/resume/refs/heads/main/main.pdf",
+	resume:	"https://rajatsandeepsen.github.io/resume/",
 	location: "Thodupuzha, Kerala 🇮🇳",
 	locationLink: "https://www.google.com/maps/place/thodupuzha",
 	description: "CTO ⬟ Manolo",
