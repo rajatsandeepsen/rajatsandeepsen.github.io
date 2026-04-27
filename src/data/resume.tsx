@@ -1,4 +1,4 @@
-import { CodeIcon, HomeIcon } from "lucide-react";
+import { CodeIcon, HomeIcon, TrophyIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 export const DATA = {
@@ -46,7 +46,7 @@ export const DATA = {
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
 		{ href: "/projects", icon: CodeIcon, label: "Projects" },
-		// { href: "/blog", icon: NotebookIcon, label: "Blog" },
+		{ href: "/hackathons", icon: TrophyIcon, label: "Hackathons" },
 	],
 	contact: {
 		email: "rajat@manolo.in",
@@ -226,19 +226,6 @@ export const DATA = {
 				"https://sjcetpalai.ac.in/wp-content/uploads/2019/01/SJCET-LOGO-Orginal-1200x1161.png",
 			start: "2021",
 			end: "2025",
-		},
-	],
-	hackathons: [
-		{
-			title: "Hack Western 5",
-			dates: "November 23rd - 25th, 2018",
-			location: "London, Ontario",
-			description:
-				"Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-			image:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-			links: [],
 		},
 	],
 };

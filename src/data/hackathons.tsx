@@ -1,0 +1,32 @@
+export const hackathons = [
+	{
+		title: "#BuildWithAI International Hackathon",
+		dates: "2025",
+		location: "Online",
+		prize: "5th",
+		description: "Developed a Multi-Model AI for online news",
+		tweet: "1888209845871858037",
+		image: "https://images.genai.works/genaiww_b3977e1d01.jpg",
+		links: [],
+	},
+	{
+		title: "Satwa National Level Hackathon",
+		dates: "2024",
+		location: "Online",
+		prize: "2nd",
+		description: "Developed an Action Model AI for health care assistance",
+		tweet: "1765842034261389417",
+		image: "/assets/satwa.jpg",
+		links: [],
+	},
+	{
+		title: "Beyond-the-Loop Hackathon",
+		dates: "2024",
+		location: "Online",
+		prize: "1st",
+		description: "Developed a Google Drive file system with AI capabilities",
+		tweet: "1776085097805938714",
+		image: "https://beyond-the-loop.vercel.app/favicon.ico",
+		links: [],
+	},
+];
