@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export const hackathons = [
 	{
 		title: "#BuildWithAI International Hackathon",
@@ -29,4 +31,17 @@ export const hackathons = [
 		image: "https://beyond-the-loop.vercel.app/favicon.ico",
 		links: [],
 	},
-];
+] as {
+	title: string;
+	dates: string;
+	location: string;
+	prize: string;
+	description: string;
+	tweet: string;
+	image: string;
+	links: {
+		href: string;
+		title: string;
+		icon: ReactNode;
+	}[];
+}[];

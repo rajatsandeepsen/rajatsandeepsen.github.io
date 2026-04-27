@@ -37,9 +37,9 @@ export function HackathonCard({
 			<TweetCard id={tweet} className="overflow-hidden" />
 			{links && links.length > 0 && (
 				<div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-					{links?.map((link, idx) => (
-						<Link href={link.href} key={idx}>
-							<Badge key={idx} title={link.title} className="flex gap-2">
+					{links?.map((link) => (
+						<Link href={link.href} key={link.href}>
+							<Badge title={link.title} className="flex gap-2">
 								{link.icon}
 								{link.title}
 							</Badge>
