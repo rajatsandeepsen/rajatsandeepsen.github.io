@@ -4,7 +4,7 @@ import { Icons } from "@/components/icons";
 export const DATA = {
 	name: "Rajat Sandeep",
 	initials: "Rajat",
-	url: "https://rajat.club",
+	url: "https://rajatsandeepsen.github.io",
 	projects: "/projects",
 	resume: "https://rajatsandeepsen.github.io/resume/",
 	location: "Thodupuzha, Kerala 🇮🇳",
@@ -13,7 +13,7 @@ export const DATA = {
 	summary:
 		"DevOps - Full Stack Dev - App Dev - AI Engineer - FOSS Enthusiast - Freelancer",
 	avatarUrl: "https://github.com/rajatsandeepsen.png",
-	languages: ["English", "Malayalam", "Typescript", "Python", "SQL"],
+	languages: ["Typescript", "Python", "SQL"],
 	libraries: [
 		"React",
 		"TailwindCSS",
@@ -74,7 +74,7 @@ export const DATA = {
 				name: "Bluesky",
 				url: "https://bsky.app/profile/rajat.club",
 				icon: Icons.bluesky,
-				navbar: true,
+				navbar: false,
 			},
 			email: {
 				name: "Send Email",
@@ -155,7 +155,7 @@ export const DATA = {
 			logoUrl: "https://findmycrush.app/logo.svg",
 			start: "Feb 2026",
 			end: "Present",
-			description: "Created a fun genz dating app for college students",
+			description: "Created a fun genz social media app for college students",
 		},
 		{
 			company: "Manolo Ventures",
