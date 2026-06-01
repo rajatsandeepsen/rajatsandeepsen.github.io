@@ -240,6 +240,7 @@ export const MagicTweet = ({
 	components?: TwitterComponents;
 	className?: string;
 }) => {
+	return;
 	const enrichedTweet = enrichTweet(tweet);
 	return (
 		<div
