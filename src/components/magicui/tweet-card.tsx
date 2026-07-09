@@ -145,7 +145,7 @@ export const TweetHeader = ({ tweet }: { tweet: EnrichedTweet }) => (
 );
 
 export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
-	<div className="text-[15px] leading-relaxed tracking-normal wrap-break-word">
+	<div className="text-[15px] leading-relaxed tracking-normal break-words whitespace-pre-wrap">
 		{tweet.entities.map((entity, idx) => {
 			switch (entity.type) {
 				case "url":
@@ -179,7 +179,25 @@ export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
 );
 
 export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
-	if (!tweet.video && !tweet.photos) return null;
+	type CardBindingValue = {
+		image_value?: {
+			url?: string;
+		};
+	};
+
+	type TweetCard = {
+		binding_values?: Record<string, CardBindingValue>;
+	};
+
+	const card = (tweet as EnrichedTweet & { card?: TweetCard }).card;
+	const bindingValues = card?.binding_values;
+	const cardImageUrl =
+		bindingValues?.thumbnail_image_large?.image_value?.url ??
+		bindingValues?.summary_photo_image?.image_value?.url ??
+		bindingValues?.thumbnail_image?.image_value?.url;
+
+	if (!tweet.video && !tweet.photos && !cardImageUrl) return null;
+
 	return (
 		<div className="flex flex-1 items-center justify-center">
 			{tweet.video && (
@@ -197,7 +215,6 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
 			)}
 			{tweet.photos && (
 				<div className="relative flex transform-gpu snap-x snap-mandatory gap-4 overflow-x-auto">
-					{/*<div className="shrink-0 snap-center sm:w-2" />*/}
 					{tweet.photos.map((photo) => (
 						<img
 							key={photo.url}
@@ -207,24 +224,20 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
 							title={"Photo by " + tweet.user.name}
 							alt={tweet.text}
 							className="h-64 shrink-0 snap-center snap-always rounded-xl border object-cover shadow-sm"
+							style={{
+								width: tweet.photos?.length > 1 ? "80%" : undefined,
+							}}
 						/>
 					))}
-					{/*<div className="shrink-0 snap-center sm:w-2" />*/}
 				</div>
 			)}
-			{!tweet.video &&
-				!tweet.photos &&
-				// @ts-expect-error package doesn't have type definitions
-				tweet?.card?.binding_values?.thumbnail_image_large?.image_value.url && (
-					<img
-						src={
-							// @ts-expect-error package doesn't have type definitions
-							tweet.card.binding_values.thumbnail_image_large.image_value.url
-						}
-						className="h-64 rounded-xl border object-cover shadow-sm"
-						alt={tweet.text}
-					/>
-				)}
+			{!tweet.video && !tweet.photos && cardImageUrl && (
+				<img
+					src={cardImageUrl}
+					className="h-64 rounded-xl border object-cover shadow-sm"
+					alt={tweet.text}
+				/>
+			)}
 		</div>
 	);
 };
