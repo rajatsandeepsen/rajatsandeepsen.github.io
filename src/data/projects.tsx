@@ -9,13 +9,13 @@ interface Link {
 interface Project {
 	title: string;
 	href: string;
-	tweet: string;
+	tweet?: string;
 	active: boolean;
 	description: string;
 	technologies: string[];
 	links: Link[];
-	image: string;
-	video: string;
+	image?: string;
+	video?: string;
 }
 
 const insightProject = {
@@ -33,7 +33,7 @@ const insightProject = {
 		"Vercel AI SDK",
 		"Groq AI",
 		"Llama3",
-		"Bun"
+		"Bun",
 	],
 	links: [
 		{
@@ -42,7 +42,8 @@ const insightProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/841859035/7295a27c-92b4-43ce-a524-f1bf335d0ca7",
+	image:
+		"https://repository-images.githubusercontent.com/841859035/7295a27c-92b4-43ce-a524-f1bf335d0ca7",
 	video: "",
 } satisfies Project;
 
@@ -76,8 +77,8 @@ const luttapiProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://avatars.githubusercontent.com/u/117535918?s=280&amp;v=4",
-	video: "",
+	// image:
+	// 	"https://repository-images.githubusercontent.com/802692703/0834cd1a-d86d-4bb8-a5c6-18358b57d104",
 } satisfies Project;
 
 const fileSphereProject = {
@@ -106,7 +107,8 @@ const fileSphereProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/782896336/1de9d31e-58d8-49c9-ba9f-ea70ac68a93c",
+	image:
+		"https://repository-images.githubusercontent.com/782896336/1de9d31e-58d8-49c9-ba9f-ea70ac68a93c",
 	video: "",
 } satisfies Project;
 
@@ -134,8 +136,6 @@ const transactionsProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/634238c544b468371bf9cd8b65058eb84bb8ad62c29f62eebcff6185253c9350/rajatsandeepsen/transactions"   ,
-	video: "",
 } satisfies Project;
 
 const newsRagProject = {
@@ -169,8 +169,6 @@ const newsRagProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/13626b6c9f167674ca0208983516a8f26e7bc9e7ed0be325da160c3e02b112ed/rajatsandeepsen/news-rag",
-	video: "",
 } satisfies Project;
 
 const mcpMobileProject = {
@@ -198,13 +196,11 @@ const mcpMobileProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/8e12bfefd962706588dc6fc5e2ff362f562b03e38414ce09f3d399ff190a93e3/rajatsandeepsen/mcp-mobile",
-	video: "",
 } satisfies Project;
 
 const initiativeProject = {
 	title: "Initiative",
-	tweet: "",
+	tweet: "1934410895419175243",
 	href: "https://www.npmjs.com/package/initiative",
 
 	active: true,
@@ -230,8 +226,6 @@ const initiativeProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/785114711/4be8d46a-5c2f-4f2d-9913-a21e82364de3",
-	video: "",
 } satisfies Project;
 
 const openEditorProject = {
@@ -263,7 +257,8 @@ const openEditorProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/1006848072/992d8018-a754-4448-a650-db0a852bb1ef",
+	image:
+		"https://repository-images.githubusercontent.com/1006848072/992d8018-a754-4448-a650-db0a852bb1ef",
 	video: "",
 } satisfies Project;
 
@@ -295,8 +290,6 @@ const sarvamAiSdkProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/993589005/2eb2d1b2-db3b-484c-8920-3397799b1380",
-	video: "",
 } satisfies Project;
 
 const mindEaseProject = {
@@ -322,8 +315,6 @@ const mindEaseProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/143b68d6ee6fb8f8ec2e406f00a9cf2490087dd1b868e5007dbd737b87c84fec/nexussjcet/mindease",
-	video: "",
 } satisfies Project;
 
 const interphaseProject = {
@@ -354,7 +345,8 @@ const interphaseProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/680398557/aad00547-0bf1-4cf4-8431-17de100325fb",
+	image:
+		"https://repository-images.githubusercontent.com/680398557/aad00547-0bf1-4cf4-8431-17de100325fb",
 	video: "",
 } satisfies Project;
 
@@ -387,13 +379,14 @@ const becknTypeScriptProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/982672021/6c1d8ade-b3d3-4b0d-bc76-35aa6f3bf0d7",
+	image:
+		"https://repository-images.githubusercontent.com/982672021/6c1d8ade-b3d3-4b0d-bc76-35aa6f3bf0d7",
 	video: "",
 } satisfies Project;
 
 const mcmdProject = {
 	title: "MCMD",
-	tweet: "",
+	tweet: "2068614066768433388",
 	href: "https://www.npmjs.com/package/mcmd",
 
 	active: true,
@@ -419,7 +412,54 @@ const mcmdProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/1007413292/ed201418-3220-400a-a2e8-dcc43925bac1",
+} satisfies Project;
+
+const betterAuth = {
+	title: "Better-Auth Plugin For Zoho, Instagram & Snapchat",
+	tweet: "2075032515480571915",
+	href: "https://better-auth.com/docs/plugins/community-plugins",
+	active: true,
+	description:
+		"Better-Auth plugin build on top of Zoho, Instagram & Snapchat OAuth Provider APIS",
+	technologies: ["TypeScript", "better-auth"],
+	links: [
+		{
+			type: "Source",
+			href: "https://github.com/rajatsandeepsen/better-auth-instagram",
+			icon: <Icons.github className="size-3" />,
+		},
+		{
+			type: "Source",
+			href: "https://github.com/rajatsandeepsen/better-auth-zoho",
+			icon: <Icons.github className="size-3" />,
+		},
+		{
+			type: "Source",
+			href: "https://github.com/rajatsandeepsen/better-auth-snapchat",
+			icon: <Icons.github className="size-3" />,
+		},
+	],
+	image: "",
+	video: "",
+} satisfies Project;
+
+const sarvamTranslate = {
+	title: "Translate any website using Sarvam AI",
+	tweet: "2068611393159671896",
+	href: "https://github.com/sarvam-ai/localize",
+	active: true,
+	description:
+		"A CLI that Translate any website into 23 indian languages using Sarvam AI",
+	technologies: ["TypeScript", "sarvam"],
+	links: [
+		{
+			type: "Source",
+			href: "https://github.com/sarvam-ai/localize",
+			icon: <Icons.github className="size-3" />,
+		},
+	],
+	image:
+		"https://repository-images.githubusercontent.com/1272156240/b9b89dc7-5775-4a50-8abc-d9ba22b6e7cf",
 	video: "",
 } satisfies Project;
 
@@ -453,7 +493,8 @@ const magicUiProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/2022ba899a6233db241917aab0b8d549d9cb754265aa7b8cab28156ce20f3a98/magicuidesign/magicui",
+	image:
+		"https://opengraph.githubassets.com/2022ba899a6233db241917aab0b8d549d9cb754265aa7b8cab28156ce20f3a98/magicuidesign/magicui",
 	video: "https://cdn.magicui.design/bento-grid.mp4",
 } satisfies Project;
 
@@ -485,40 +526,28 @@ const tedxSjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/530770134/3b41c566-3d26-49c5-9915-eb8b0b596dca",
-	video: "",
 } satisfies Project;
 
-const iedcSjcetProject = {
-	title: "IEDC SJCET Website",
-	tweet: "",
-	href: "https://iedc.sjcetpalai.ac.in",
+const nexusSjcetProject = {
+	title: "Nexus FOSSDAY Website",
+	tweet: "1848590339176612159",
+	href: "https://nexus.sjcetpalai.ac.in/fossday",
 
 	active: true,
-	description:
-		"Built and maintained the Innovation and Entrepreneurship Development Cell website with focus on student startups and event management.",
-	technologies: [
-		"Next.js",
-		"TypeScript",
-		"TailwindCSS",
-		"Framer Motion",
-		"tRPC",
-		"Drizzle ORM",
-	],
+	description: "Built and maintained the website for the FOSSDAY event",
+	technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
 	links: [
 		{
 			type: "Website",
-			href: "https://iedc.sjcetpalai.ac.in",
+			href: "https://nexus.sjcetpalai.ac.in",
 			icon: <Icons.globe className="size-3" />,
 		},
 		{
 			type: "Source",
-			href: "https://github.com/iedc-sjcet/iedc-web",
+			href: "https://github.com/nexussjcet/nexussjcet.github.io",
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/9b5fa4581b367322584e12694c6c723fb6942c0054c3d18f5bee5fcf3435a95a/Milansuman/Helios-Browser",
-	video: "",
 } satisfies Project;
 
 const asthraWebsiteProject = {
@@ -574,14 +603,12 @@ const ieeeSjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/802692703/0834cd1a-d86d-4bb8-a5c6-18358b57d104",
-	video: "",
 } satisfies Project;
 
 const portfolioProject = {
 	title: "Personal Portfolio",
 	tweet: "1912295868088349039",
-	href: "https://rajat.club",
+	href: "https://rajatsandeepsen.github.io",
 
 	active: true,
 	description:
@@ -596,7 +623,7 @@ const portfolioProject = {
 	links: [
 		{
 			type: "Website",
-			href: "https://rajat.club",
+			href: "https://rajatsandeepsen.github.io",
 			icon: <Icons.globe className="size-3" />,
 		},
 		{
@@ -605,8 +632,6 @@ const portfolioProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/961214783/eceab33a-a29f-4ba6-a36a-cb5c7eb26320",
-	video: "",
 } satisfies Project;
 
 const adsjcetProject = {
@@ -636,7 +661,8 @@ const adsjcetProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/701049580/cdd7b776-3cbd-414e-992f-9c2246079f1b",
+	image:
+		"https://repository-images.githubusercontent.com/701049580/cdd7b776-3cbd-414e-992f-9c2246079f1b",
 	video: "",
 } satisfies Project;
 
@@ -670,7 +696,8 @@ const scriptWriterProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://repository-images.githubusercontent.com/612582551/46cc05c8-3db1-4daa-9105-08b03ac286ad",
+	image:
+		"https://repository-images.githubusercontent.com/612582551/46cc05c8-3db1-4daa-9105-08b03ac286ad",
 	video: "",
 } satisfies Project;
 
@@ -715,8 +742,7 @@ const heliosBrowserProject = {
 const betterStarterKitProject: Project = {
 	title: "Better Starter Kit",
 	href: "https://github.com/rajatsandeepsen/better-starter-kit",
-	tweet:
-		"A modern starter kit for full-stack apps with Next.js, TailwindCSS, Drizzle ORM (Postgres), oRPC, Shadcn-UI, Better-Auth, Bun, and Biome. 🚀",
+	tweet: "1862111366355603921",
 	active: true,
 	description:
 		"Better T3 Biome Bun Starter Kit with Next.js, TailwindCSS, Drizzle ORM (Postgres), oRPC, Shadcn-UI, and Better-Auth. Designed for rapid, scalable, and modern web app development with a batteries-included approach.",
@@ -739,33 +765,31 @@ const betterStarterKitProject: Project = {
 			href: "https://github.com/rajatsandeepsen/better-starter-kit",
 			icon: <Icons.globe className="size-3" />,
 		},
-		{
-			type: "Source",
-			href: "https://github.com/rajatsandeepsen/better-starter-kit",
-			icon: <Icons.github className="size-3" />,
-		},
 	],
-	image: "",
-	video: "",
+	image:
+		"https://pbs.twimg.com/card_img/2072786509023813633/q8JuuUJf?format=png&name=900x900",
 };
 
 export const ProjectData = {
 	genAI: [
+		sarvamAiSdkProject,
+		sarvamTranslate,
 		luttapiProject,
+		heliosBrowserProject,
 		fileSphereProject,
 		transactionsProject,
 		newsRagProject,
 		mcpMobileProject,
 		initiativeProject,
 		openEditorProject,
-		sarvamAiSdkProject,
 		mindEaseProject,
-		heliosBrowserProject,
 		insightProject,
 	],
 	ML: [],
 	tools: [
+		betterAuth,
 		mcmdProject,
+		sarvamTranslate,
 		interphaseProject,
 		becknTypeScriptProject,
 		initiativeProject,
@@ -779,9 +803,9 @@ export const ProjectData = {
 		luttapiProject,
 		tedxSjcetProject,
 		adsjcetProject,
-		// iedcSjcetProject,
+		nexusSjcetProject,
 		asthraWebsiteProject,
-		// ieeeSjcetProject,
+		ieeeSjcetProject,
 		portfolioProject,
 		scriptWriterProject,
 	],
@@ -805,9 +829,8 @@ export const AllProjectsData = [
 	magicUiProject,
 	tedxSjcetProject,
 	adsjcetProject,
-	// iedcSjcetProject,
+	nexusSjcetProject,
 	asthraWebsiteProject,
-	// ieeeSjcetProject,
 	portfolioProject,
 	scriptWriterProject,
 ];

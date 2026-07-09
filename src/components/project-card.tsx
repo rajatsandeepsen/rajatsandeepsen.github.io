@@ -11,6 +11,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 import { TweetCard } from "./magicui/tweet-card-client";
 
 interface Props {
@@ -48,10 +49,10 @@ export function ProjectCard({
 				"flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
 			}
 		>
-			{/* <Link
+			<Link
 				href={href || "#"}
 				className={cn("block cursor-pointer", className)}
-			> */}
+			>
 				{tweet && (
 					<div className="overflow-hidden p-10">
 						<TweetCard id={tweet} className="m-auto" />
@@ -67,7 +68,7 @@ export function ProjectCard({
 						className="pointer-events-none mx-auto w-full object-cover object-top" // needed because random black line at bottom of video
 					/>
 				)}
-				{!tweet && !video && image && (
+				{!video && image && (
 					<Image
 						src={image}
 						alt={title}
@@ -76,7 +77,7 @@ export function ProjectCard({
 						className="w-full overflow-hidden object-cover object-top"
 					/>
 				)}
-			{/* </Link> */}
+			</Link>
 			<CardHeader className="px-2">
 				<div className="space-y-1">
 					<CardTitle className="mt-1 text-base">{title}</CardTitle>
