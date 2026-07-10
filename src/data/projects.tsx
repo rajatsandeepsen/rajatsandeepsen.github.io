@@ -24,7 +24,7 @@ const insightProject = {
 	tweet: "1879180232562983349",
 	active: true,
 	description:
-		"Self-hostable AI enabled WhatsApp Agent. An open-source alternative to Zoko, featuring Docker support, Redis, and integration with Vercel AI SDK, Groq AI, and Llama3.",
+		"Self-hostable AI-enabled WhatsApp agent. An open-source alternative to Zoko, featuring Docker support, Redis, and integration with Vercel AI SDK, Groq AI, and Llama 3.",
 	technologies: [
 		"TypeScript",
 		"JavaScript",
@@ -45,7 +45,7 @@ const insightProject = {
 } satisfies Project;
 
 const luttapiProject = {
-	title: "LUTTAPI",
+	title: "LUTTAPI - AI Document Workspace",
 	tweet: "1822760698109145533",
 	href: "https://github.com/rajatsandeepsen/LUTTAPI",
 
@@ -79,13 +79,13 @@ const luttapiProject = {
 } satisfies Project;
 
 const fileSphereProject = {
-	title: "FileSphere.ai",
+	title: "FileSphere.ai - AI File Management",
 	tweet: "",
 	href: "https://github.com/nexussjcet/filesphere.ai",
 
 	active: true,
 	description:
-		"Your Smartest Productivity AI for File Management. Features include file reading, summarization, email sending, and conversion through natural language prompts. Built custom LAM (Language Action Model) implementation on top of LangChain.js.",
+		"Your smartest productivity AI for file management. Features include file reading, summarization, email sending, and conversion through natural-language prompts. Built with a custom LAM (Language Action Model) implementation on top of LangChain.js.",
 	technologies: [
 		"Next.js",
 		"TypeScript",
@@ -110,12 +110,12 @@ const fileSphereProject = {
 } satisfies Project;
 
 const transactionsProject = {
-	title: "Transactions",
+	title: "Transactions - Conversational Banking",
 	href: "https://github.com/rajatsandeepsen/transactions",
 	tweet: "1785190367022711208",
 	active: true,
 	description:
-		"Just talk, Banking App will do stuff for you intelligently. A conversational banking interface that uses AI to understand and execute banking operations through natural language.",
+		"Just talk—the banking app handles tasks intelligently. A conversational banking interface that uses AI to understand and execute operations through natural language.",
 	technologies: [
 		"Next.js",
 		"TypeScript",
@@ -136,13 +136,13 @@ const transactionsProject = {
 } satisfies Project;
 
 const newsRagProject = {
-	title: "News RAG",
+	title: "News RAG - AI News Assistant",
 	tweet: "1888209845871858037",
 	href: "https://news-rag.vercel.app",
 
 	active: false,
 	description:
-		"Multi-model enabled AI News App that won 5th prize in GenAI International Hackathon. Features include news summarization, sentiment analysis, and personalized recommendations using RAG architecture.",
+		"Multi-model AI news app that won 5th prize in an international GenAI hackathon. Features include news summarization, sentiment analysis, and personalized recommendations using a RAG architecture.",
 	technologies: [
 		"Next.js",
 		"React",
@@ -169,7 +169,7 @@ const newsRagProject = {
 } satisfies Project;
 
 const mcpMobileProject = {
-	title: "MCP Mobile",
+	title: "MCP Mobile - React Native Client",
 	tweet: "1913983194464161829",
 	href: "https://github.com/rajatsandeepsen/mcp-mobile",
 
@@ -196,13 +196,13 @@ const mcpMobileProject = {
 } satisfies Project;
 
 const initiativeProject = {
-	title: "Initiative",
+	title: "Initiative - AI Agent SDK Extension",
 	tweet: "1934410895419175243",
 	href: "https://www.npmjs.com/package/initiative",
 
 	active: true,
 	description:
-		"A Vercel AI-SDK extension that turns LLMs into agents capable of making multiple chained tool calls within a single inference. Features Zod schema-based tool creation and built-in safety evaluations.",
+		"A Vercel AI SDK extension that turns LLMs into agents capable of making multiple chained tool calls within a single inference. Features Zod schema-based tool creation and built-in safety evaluations.",
 	technologies: [
 		"TypeScript",
 		"Vercel AI SDK",
@@ -226,13 +226,13 @@ const initiativeProject = {
 } satisfies Project;
 
 const openEditorProject = {
-	title: "Open Editor",
+	title: "Open Editor - AI Video Generation CLI",
 	tweet: "2071622832170406151",
 	href: "https://www.npmjs.com/package/open-editor-demo",
 
 	active: true,
 	description:
-		"AI powered FFmpeg wrapper CLI for video generation using Google AI and Sarvam AI, with support for script generation, image creation, audio synthesis, and automated video rendering.",
+		"AI-powered FFmpeg wrapper CLI for video generation using Google AI and Sarvam AI, with support for script generation, image creation, audio synthesis, and automated video rendering.",
 	technologies: [
 		"TypeScript",
 		"FFmpeg",
@@ -257,7 +257,7 @@ const openEditorProject = {
 } satisfies Project;
 
 const sarvamAiSdkProject = {
-	title: "Sarvam AI SDK",
+	title: "Sarvam AI SDK - TypeScript Toolkit",
 	tweet: "1928774981552582677",
 	href: "https://www.npmjs.com/package/sarvam-ai-sdk",
 
@@ -287,7 +287,7 @@ const sarvamAiSdkProject = {
 } satisfies Project;
 
 const mindEaseProject = {
-	title: "MindEase",
+	title: "MindEase - Personal Healthcare Bot",
 	tweet: "1765842034261389417",
 	href: "https://github.com/nexussjcet/mindease",
 
@@ -312,13 +312,13 @@ const mindEaseProject = {
 } satisfies Project;
 
 const interphaseProject = {
-	title: "Interphase",
+	title: "Interphase - Cross-Stack Type Sync",
 	tweet: "",
 	href: "https://pypi.org/project/interphase",
 
 	active: true,
 	description:
-		"Python Package for generating TypeScript interfaces with git submodule folder structure. Bridges backend and frontend development by facilitating sharing of types, example data, and API documentation.",
+		"Python package for generating TypeScript interfaces with a Git submodule-based folder structure. Bridges backend and frontend development by facilitating the sharing of types, example data, and API documentation.",
 	technologies: [
 		"Python",
 		"TypeScript",
@@ -345,7 +345,7 @@ const interphaseProject = {
 } satisfies Project;
 
 const becknTypeScriptProject = {
-	title: "Beckn SDKs (TypeScript + Python)",
+	title: "Beckn SDKs - TypeScript & Python",
 	tweet: "1933135950160486776",
 	href: "https://github.com/rajatsandeepsen/beckn-typescript",
 
@@ -392,13 +392,13 @@ const becknTypeScriptProject = {
 } satisfies Project;
 
 const mcmdProject = {
-	title: "MCMD",
+	title: "MCMD - File-Based CLI Framework",
 	tweet: "2068614066768433388",
 	href: "https://www.npmjs.com/package/mcmd",
 
 	active: true,
 	description:
-		"A meta framework for building CLIs with file-based routing pattern inspired by Next.js, providing better DX for command-line tool development.",
+		"A meta-framework for building CLIs with a file-based routing pattern inspired by Next.js, providing better DX for command-line tool development.",
 	technologies: [
 		"TypeScript",
 		"Bun",
@@ -422,12 +422,12 @@ const mcmdProject = {
 } satisfies Project;
 
 const betterAuth = {
-	title: "Better-Auth Plugin For Zoho, Instagram & Snapchat",
+	title: "Better Auth - OAuth Plugins for Zoho, Instagram & Snapchat",
 	tweet: "2075032515480571915",
 	href: "https://better-auth.com/docs/plugins/community-plugins",
 	active: true,
 	description:
-		"Better-Auth plugin build on top of Zoho, Instagram & Snapchat OAuth Provider APIS",
+		"Better Auth community plugins built on top of Zoho, Instagram, and Snapchat OAuth provider APIs.",
 	technologies: ["TypeScript", "better-auth"],
 	links: [
 		{
@@ -451,7 +451,7 @@ const betterAuth = {
 } satisfies Project;
 
 const betterChatsProject = {
-	title: "better-chats",
+	title: "better-chats - TypeScript Chat Framework",
 	tweet: "2020200872945607064",
 	href: "https://www.npmjs.com/package/better-chats",
 	active: true,
@@ -473,8 +473,8 @@ const betterChatsProject = {
 } satisfies Project;
 
 const honoCfProject = {
-	title: "hono-cf",
-	tweet: "",
+	title: "hono-cf - Cloudflare Hono Wrapper",
+	tweet: "1983974388929331643",
 	href: "https://www.npmjs.com/package/hono-cf",
 	active: true,
 	description:
@@ -492,16 +492,15 @@ const honoCfProject = {
 			icon: <Icons.github className="size-3" />,
 		},
 	],
-	image: "https://opengraph.githubassets.com/1/manolo-in/hono-cf",
 } satisfies Project;
 
 const sarvamTranslate = {
-	title: "Translate any website using Sarvam AI",
+	title: "Sarvam Localize - Translate Any Website",
 	tweet: "2068611393159671896",
 	href: "https://github.com/sarvam-ai/localize",
 	active: true,
 	description:
-		"A CLI that Translate any website into 23 indian languages using Sarvam AI",
+		"A CLI that translates any website into 23 Indian languages using Sarvam AI.",
 	technologies: ["TypeScript", "sarvam"],
 	links: [
 		{
@@ -513,13 +512,13 @@ const sarvamTranslate = {
 } satisfies Project;
 
 const magicUiProject = {
-	title: "Magic UI",
+	title: "Magic UI - Animated Components Library",
 	tweet: "1809988588462866535",
 	href: "https://magicui.design",
 
 	active: true,
 	description:
-		"Designed, developed and sold animated UI components for developers.",
+		"Designed, developed, and sold animated UI components for developers.",
 	technologies: [
 		"Next.js",
 		"Typescript",
@@ -548,7 +547,7 @@ const magicUiProject = {
 } satisfies Project;
 
 const tedxSjcetProject = {
-	title: "TEDx SJCET Website",
+	title: "TEDx SJCET - Official Event Website",
 	tweet: "1882996937751933410",
 	href: "https://tedx.sjcetpalai.ac.in",
 
@@ -578,12 +577,12 @@ const tedxSjcetProject = {
 } satisfies Project;
 
 const nexusSjcetProject = {
-	title: "Nexus FOSSDAY Website",
+	title: "Nexus FOSSDAY - Event Website",
 	tweet: "1848590339176612159",
 	href: "https://nexus.sjcetpalai.ac.in/fossday",
 
 	active: true,
-	description: "Built and maintained the website for the FOSSDAY event",
+	description: "Built and maintained the website for the FOSSDAY event.",
 	technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
 	links: [
 		{
@@ -600,7 +599,7 @@ const nexusSjcetProject = {
 } satisfies Project;
 
 const voiceItProject = {
-	title: "Voice It -  MultiMedia Comment Extension for VSCode",
+	title: "Voice It - Multimedia Comment Extension for VS Code",
 	tweet: "1752374153363992925",
 	href: "https://github.com/nexussjcet/voice-it",
 
@@ -626,12 +625,12 @@ const voiceItProject = {
 } satisfies Project;
 
 const asthraWebsiteProject = {
-	title: "ASTHRA Web & Backend",
+	title: "ASTHRA - Event Platform & Backend",
 	tweet: "1950387359566172489",
 	href: "https://asthra.sjcetpalai.ac.in",
 	active: true,
 	description:
-		"Developed an event registration system for college tech fest with and dynamic content management.",
+		"Developed an event registration system for a college tech fest with dynamic content management.",
 	technologies: [
 		"Next.js",
 		"TypeScript",
@@ -659,13 +658,13 @@ const asthraWebsiteProject = {
 } satisfies Project;
 
 const ieeeSjcetProject = {
-	title: "IEEE SJCET Website",
+	title: "IEEE SJCET - Student Branch Website",
 	tweet: "",
 	href: "https://ieee.sjcetpalai.ac.in",
 
 	active: false,
 	description:
-		"Created responsive website for IEEE Student Branch with event showcase and member management system.",
+		"Created a responsive website for the IEEE Student Branch with an event showcase and member management system.",
 	technologies: ["React", "JavaScript", "TailwindCSS", "Express.js", "MongoDB"],
 	links: [
 		{
@@ -682,13 +681,13 @@ const ieeeSjcetProject = {
 } satisfies Project;
 
 const portfolioProject = {
-	title: "Personal Portfolio",
+	title: "Personal Portfolio - Developer Showcase",
 	tweet: "1912295868088349039",
 	href: "https://rajatsandeepsen.github.io",
 
 	active: true,
 	description:
-		"Modern and minimalistic personal portfolio website with dark mode and responsive design.",
+		"Modern and minimal personal portfolio website with dark mode and responsive design.",
 	technologies: [
 		"Next.js",
 		"TypeScript",
@@ -711,7 +710,7 @@ const portfolioProject = {
 } satisfies Project;
 
 const adsjcetProject = {
-	title: "Official Website of ADSA SJCET Palai",
+	title: "ADSA SJCET - Official Website",
 	tweet: "",
 	href: "https://adsa.sjcetpalai.ac.in",
 	active: true,
@@ -743,13 +742,13 @@ const adsjcetProject = {
 } satisfies Project;
 
 const scriptWriterProject = {
-	title: "Script Writer",
+	title: "Script Writer - Browser Notebook IDE",
 	tweet: "",
 	href: "https://scriptw.vercel.app",
 
 	active: false,
 	description:
-		"In-Browser Jupyter Notebook Alternative for JavaScript that works without NodeJS kernel. Features include notebook management, code execution, and markdown support with VS Code-like experience.",
+		"In-browser Jupyter notebook alternative for JavaScript that works without a Node.js kernel. Features include notebook management, code execution, and Markdown support with a VS Code-like experience.",
 	technologies: [
 		"Next.js",
 		"React",
@@ -795,7 +794,7 @@ const findMyCrushAppProject = {
 } satisfies Project;
 
 const ibnManoloAppProject = {
-	title: "IBN Manolo",
+	title: "IBN Manolo - Retail Investment App",
 	tweet: "",
 	href: "https://ibn.manolo.in",
 	active: true,
@@ -821,13 +820,13 @@ interface ProjectCategories {
 }
 
 const heliosBrowserProject = {
-	title: "Helios Browser",
+	title: "Helios Browser - Modular Productivity Browser",
 	tweet: "1832341524148863408",
 	href: "https://github.com/Milansuman/Helios-Browser",
 
 	active: true,
 	description:
-		"Open source modular browser for developers, designers, and power users. Features workflow automation, modular extensions, and deep integration of developer tools. Built with C++ and Qt, optimized for productivity and extensibility.",
+		"Open-source modular browser for developers, designers, and power users. Features include workflow automation, modular extensions, and deep integration of developer tools. Built with C++ and Qt, optimized for productivity and extensibility.",
 	technologies: [
 		"C++",
 		"Qt",
@@ -850,7 +849,7 @@ const heliosBrowserProject = {
 } satisfies Project;
 
 const betterStarterKitProject: Project = {
-	title: "Better Starter Kit",
+	title: "Better Starter Kit - Full-Stack Boilerplate",
 	href: "https://github.com/rajatsandeepsen/better-starter-kit",
 	tweet: "1862111366355603921",
 	active: true,
@@ -881,7 +880,7 @@ const betterStarterKitProject: Project = {
 };
 
 const dockerIntroProject: Project = {
-	title: "Docker Intro",
+	title: "Docker Intro - Workshop Project",
 	href: "https://github.com/rajatsandeepsen/docker-intro",
 	tweet: "1765860725770047571",
 	active: true,
@@ -903,12 +902,12 @@ const dockerIntroProject: Project = {
 };
 
 const radarProject: Project = {
-	title: "Radar",
+	title: "Radar - Edge AI Surveillance",
 	href: "https://github.com/rajatsandeepsen/radar",
 	tweet: "1912558225972777207",
 	active: true,
 	description:
-		"AI powered survilance tool that runs on edge with reduced usage of memory and GPU",
+		"AI-powered surveillance tool that runs at the edge with reduced memory and GPU usage.",
 	technologies: [
 		"Python",
 		"FastAPI",
@@ -929,7 +928,7 @@ const radarProject: Project = {
 };
 
 const sarvamSimpleProject: Project = {
-	title: "Sarvam Simple",
+	title: "Sarvam Simple - Serverless AI Workflows",
 	href: "https://github.com/sarvam-ai/simple",
 	tweet: "2071482782505996730",
 	active: true,
@@ -959,7 +958,7 @@ const sarvamSimpleProject: Project = {
 };
 
 const sarvamLangchainProject: Project = {
-	title: "Sarvam LangChain JS",
+	title: "Sarvam LangChain JS - LangChain Integration",
 	href: "https://github.com/sarvam-ai/langchain-js",
 	tweet: "2071482786591236281",
 	active: true,
@@ -981,7 +980,7 @@ const sarvamLangchainProject: Project = {
 };
 
 const sarvamAdkProject: Project = {
-	title: "Sarvam ADK JS",
+	title: "Sarvam ADK JS - Google ADK Integration",
 	href: "https://github.com/sarvam-ai/adk-js",
 	tweet: "2071482778345209903",
 	active: true,
@@ -1008,7 +1007,7 @@ const sarvamAdkProject: Project = {
 };
 
 const sarvamLocalizeDemoProject: Project = {
-	title: "Sarvam Localize Demo",
+	title: "Sarvam Localize Demo - Multilingual Web Showcase",
 	href: "https://github.com/sarvam-ai/localize-demo",
 	tweet: "",
 	active: true,
@@ -1032,7 +1031,7 @@ const sarvamLocalizeDemoProject: Project = {
 };
 
 const aiMlProject: Project = {
-	title: "AI-ML Workshop (as Guest Lecturer)",
+	title: "AI-ML Workshop - Guest Lecturer Program",
 	href: "https://github.com/rajatsandeepsen/AI-ML",
 	tweet: "2066932011315654780",
 	active: true,
@@ -1056,7 +1055,7 @@ const aiMlProject: Project = {
 };
 
 const biomeMdProject: Project = {
-	title: "biome-md",
+	title: "biome-md - Markdown Code Formatter",
 	href: "https://github.com/rajatsandeepsen/biome-md",
 	tweet: "2066847661429518730",
 	active: true,
@@ -1078,7 +1077,7 @@ const biomeMdProject: Project = {
 };
 
 const portShipProject: Project = {
-	title: "Port Agent",
+	title: "Port Agent - Cross-Language Package Porting",
 	href: "https://github.com/rajatsandeepsen/port-ship",
 	tweet: "2048264219687293219",
 	active: true,
