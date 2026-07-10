@@ -225,7 +225,7 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
 							alt={tweet.text}
 							className="h-64 shrink-0 snap-center snap-always rounded-xl border object-cover shadow-sm"
 							style={{
-								width: tweet.photos?.length > 1 ? "80%" : undefined,
+								width: (tweet?.photos?.length ?? 0) > 1 ? "80%" : undefined,
 							}}
 						/>
 					))}

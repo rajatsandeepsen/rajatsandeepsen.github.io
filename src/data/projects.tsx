@@ -6,7 +6,7 @@ interface Link {
 	icon: JSX.Element;
 }
 
-interface Project {
+export interface Project {
 	title: string;
 	href: string;
 	tweet?: string;
@@ -1155,7 +1155,7 @@ export const ProjectData = {
 	],
 } satisfies ProjectCategories;
 
-export const AllProjectsData = [
+export const AllProjectsData: Project[] = [
 	luttapiProject,
 	fileSphereProject,
 	transactionsProject,

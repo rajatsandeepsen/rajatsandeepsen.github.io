@@ -18,11 +18,11 @@ interface Props {
 	title: string;
 	href?: string;
 	description: string;
-	tweet: string;
+	tweet?: string | undefined;
 	tags: readonly string[];
 	link?: string;
-	image?: string;
-	video?: string;
+	image?: string | undefined;
+	video?: string | undefined;
 	links?: readonly {
 		icon: React.ReactNode;
 		type: string;
