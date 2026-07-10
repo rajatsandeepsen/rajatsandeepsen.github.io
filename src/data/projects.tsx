@@ -810,6 +810,30 @@ const ibnManoloAppProject = {
 	],
 } satisfies Project;
 
+const jemProject = {
+	title: "JEM - AI Jewelry Customization Store",
+	tweet: "",
+	href: "https://jem.manolo.in",
+	active: true,
+	description:
+		"Jewelry customization and e-commerce platform with AI-generated design support and a Blender-like lightweight 3D editor for interactive product customization.",
+	technologies: [
+		"Next.js",
+		"TypeScript",
+		"AI",
+		"3D Customization",
+		"E-commerce",
+	],
+	links: [
+		{
+			type: "Website",
+			href: "https://jem.manolo.in",
+			icon: <Icons.globe className="size-3" />,
+		},
+	],
+	image: "https://jem.manolo.in/opengraph-image.jpg",
+} satisfies Project;
+
 interface ProjectCategories {
 	genAI: Project[];
 	ML: Project[];
@@ -1116,8 +1140,9 @@ export const ProjectData = {
 		sarvamSimpleProject,
 		sarvamLangchainProject,
 		sarvamAdkProject,
-		sarvamLocalizeDemoProject,
+		// sarvamLocalizeDemoProject,
 		insightProject,
+		jemProject,
 	],
 	ML: [radarProject, aiMlProject],
 	tools: [
@@ -1147,9 +1172,10 @@ export const ProjectData = {
 		tedxSjcetProject,
 		adsjcetProject,
 		nexusSjcetProject,
-		ieeeSjcetProject,
+		// ieeeSjcetProject,
 		portfolioProject,
 		scriptWriterProject,
+		jemProject,
 		// sarvamLocalizeDemoProject,
 	],
 } satisfies ProjectCategories;
@@ -1188,6 +1214,7 @@ export const AllProjectsData: Project[] = [
 	betterChatsProject,
 	honoCfProject,
 	portShipProject,
+	jemProject,
 	dockerIntroProject,
 	radarProject,
 ];
