@@ -5,7 +5,9 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ResumeCard } from "@/components/resume-card";
 import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { cn } from "@/lib/utils";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -33,6 +35,22 @@ export default function Page() {
 								delay={BLUR_FADE_DELAY}
 								text={DATA.description}
 							/>
+							<div className="flex flex-wrap items-start gap-1">
+								{Object.entries(DATA.contact.social)
+									.filter(([_, social]) => social.header)
+									.map(([name, social]) => (
+										<Link
+											key={name}
+											href={social.url}
+											className={cn(
+												buttonVariants({ variant: "ghost", size: "icon" }),
+												// "size-12",
+											)}
+										>
+											<social.icon className="size-4" />
+										</Link>
+									))}
+							</div>
 						</div>
 						<Image
 							src={"/header.png"}
@@ -50,7 +68,7 @@ export default function Page() {
 				</BlurFade>
 				<BlurFade delay={BLUR_FADE_DELAY * 4}>
 					<Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-						{`${DATA.summary} \n\n From [${DATA.location}](${DATA.locationLink})\n\n Resume [Here](${DATA.resume})\n\n My [Projects & Contributions](${DATA.projects})`}
+						{`${DATA.summary} \n\n From [${DATA.location}](${DATA.locationLink})\n\n Check out my [Resume](${DATA.resume}), [Projects and Contributions](${DATA.projects})`}
 					</Markdown>
 				</BlurFade>
 			</section>
@@ -127,12 +145,35 @@ export default function Page() {
 					))}
 				</div>
 			</section>
+			<section id="publications">
+				<div className="flex min-h-0 flex-col gap-y-3">
+					<BlurFade delay={BLUR_FADE_DELAY * 7}>
+						<h2 className="text-xl font-bold">Publications</h2>
+					</BlurFade>
+					{DATA.publications.map((publication, id) => (
+						<BlurFade
+							key={publication.id}
+							delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+						>
+							<ResumeCard
+								key={publication.id}
+								logoUrl={publication.logo}
+								altText={publication.id}
+								href={publication.href}
+								title={publication.title}
+								subtitle={publication.id}
+								period={publication.date}
+							/>
+						</BlurFade>
+					))}
+				</div>
+			</section>
 			<section id="skills">
 				<div className="flex min-h-0 flex-col gap-y-3">
 					<BlurFade delay={BLUR_FADE_DELAY * 9}>
 						<h2 className="text-xl font-bold">Skills</h2>
 					</BlurFade>
-					<div className="flex flex-wrap items-start gap-1">
+					<div className="flex flex-wrap items-start gap-0 md:gap-1">
 						<BlurFade delay={BLUR_FADE_DELAY * 10}>
 							<Badge variant={"secondary"}>Languages</Badge>
 						</BlurFade>
@@ -142,7 +183,17 @@ export default function Page() {
 							</BlurFade>
 						))}
 					</div>
-					<div className="flex flex-wrap gap-1">
+					<div className="flex flex-wrap items-start gap-0 md:gap-1">
+						<BlurFade delay={BLUR_FADE_DELAY * 10}>
+							<Badge variant={"secondary"}>Runtimes</Badge>
+						</BlurFade>
+						{DATA.runtime.map((skill, id) => (
+							<BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+								<Badge key={skill}>{skill}</Badge>
+							</BlurFade>
+						))}
+					</div>
+					<div className="flex flex-wrap gap-0 md:gap-1">
 						<BlurFade delay={BLUR_FADE_DELAY * 10}>
 							<Badge variant={"secondary"}>Libraries</Badge>
 						</BlurFade>
@@ -152,7 +203,7 @@ export default function Page() {
 							</BlurFade>
 						))}
 					</div>
-					<div className="flex flex-wrap gap-1">
+					<div className="flex flex-wrap gap-0 md:gap-1">
 						<BlurFade delay={BLUR_FADE_DELAY * 10}>
 							<Badge variant={"secondary"}>Frameworks</Badge>
 						</BlurFade>
@@ -162,7 +213,7 @@ export default function Page() {
 							</BlurFade>
 						))}
 					</div>
-					<div className="flex flex-wrap gap-1">
+					<div className="flex flex-wrap gap-0 md:gap-1">
 						<BlurFade delay={BLUR_FADE_DELAY * 10}>
 							<Badge variant={"secondary"}>Tools</Badge>
 						</BlurFade>
@@ -172,7 +223,7 @@ export default function Page() {
 							</BlurFade>
 						))}
 					</div>
-					<div className="flex flex-wrap gap-1">
+					<div className="flex flex-wrap gap-0 md:gap-1">
 						<BlurFade delay={BLUR_FADE_DELAY * 10}>
 							<Badge variant={"secondary"}>Platforms</Badge>
 						</BlurFade>
