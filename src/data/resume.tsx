@@ -9,9 +9,12 @@ export const DATA = {
 	resume: "https://rajatsandeepsen.github.io/resume/",
 	location: "Thodupuzha, Kerala 🇮🇳",
 	locationLink: "https://www.google.com/maps/place/thodupuzha",
-	description: "CTO ⬟ Manolo",
-	summary:
-		"DevOps - Full Stack Dev - App Dev - AI Engineer - FOSS Enthusiast - Freelancer",
+	description: "Developer ⬟ Manolo",
+	summary: `Self-taught Full Stack Developer, App Developer, DevOps, AI Engineer, and Designer
+
+Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
+
+3x Hackathon Winner. Campus FOSS Club Ex Lead.`,
 	avatarUrl: "https://github.com/rajatsandeepsen.png",
 	languages: ["Typescript", "Python", "SQL"],
 	libraries: [
@@ -86,15 +89,27 @@ export const DATA = {
 	},
 	volenteer: [
 		{
+			company: "OpenAI Codex",
+			href: "https://www.codexnightline.in/",
+			badges: [],
+			location: "Kochi",
+			title: "Hackathon Mentor",
+			logoUrl: "https://github.com/codex.png",
+			start: "July",
+			end: "2026",
+			description: "Helped the participants as mentor and curated the finalist",
+		},
+		{
 			company: "Sarvam AI",
 			href: "https://sarvam.ai",
 			badges: [],
 			location: "Hybrid",
 			title: "Open Source Contributor",
 			logoUrl: "https://github.com/sarvamai.png",
-			start: "Apr 2026",
-			end: "Present",
-			description: "Built 5 devTools for Sarvam AI.",
+			start: "Apr",
+			end: "2026",
+			description:
+				"Built 5 devTools and transfer to their official github org.",
 		},
 		{
 			company: "Startup Bootcamp (IEDC)",
@@ -197,9 +212,9 @@ export const DATA = {
 			href: "https://manolo.in",
 			badges: [],
 			location: "Hybrid",
-			title: "Chief Technology Officer",
+			title: "Full Stack Developer",
 			logoUrl: "https://github.com/manolo-in.png",
-			start: "Jan 2025",
+			start: "Jul 2024",
 			end: "Present",
 			description: "Worked on various products like Jem, Manolo Capital etc",
 		},
@@ -210,8 +225,8 @@ export const DATA = {
 			location: "Hybrid",
 			title: "GenAI Developer (Intern)",
 			logoUrl: "https://github.com/beckn.png",
-			start: "May 2025",
-			end: "May 2025",
+			start: "May",
+			end: "2025",
 			description:
 				"Published a TS package, MCPs and built Agentic Server for new DEG project",
 		},

@@ -1,12 +1,12 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { AllProjectsData, Project, ProjectData } from "@/data/projects";
+import { AllProjectsData, type Project, ProjectData } from "@/data/projects";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-	const projects = Object.entries(ProjectData) as [string, Project[]][]
+	const projects = Object.entries(ProjectData) as [string, Project[]][];
 	const allProject = AllProjectsData;
 	const categories = projects.map((p) => p[0]);
 
@@ -18,13 +18,13 @@ export default function Page() {
 						<div className="flex flex-col items-center justify-center space-y-4 text-center">
 							<div className="space-y-2">
 								<div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-									Projects & Contributions
+									Let me cook
 								</div>
 								<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-									Let me cook
+									Projects & Contributions
 								</h2>
 								<p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-									Here are some of my contributions & projects that I cooked.
+									Here’s some of the stuff I cooked.
 								</p>
 							</div>
 						</div>

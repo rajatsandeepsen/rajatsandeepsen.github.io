@@ -841,6 +841,7 @@ interface ProjectCategories {
 	devOps: Project[];
 	websites: Project[];
 	app: Project[];
+	mentor: Project[];
 }
 
 const heliosBrowserProject = {
@@ -940,7 +941,7 @@ const radarProject: Project = {
 		"RAG",
 		"LLMs",
 		"TypeScript",
-		"React"
+		"React",
 	],
 	links: [
 		{
@@ -1178,6 +1179,7 @@ export const ProjectData = {
 		jemProject,
 		// sarvamLocalizeDemoProject,
 	],
+	mentor: [aiMlProject, dockerIntroProject],
 } satisfies ProjectCategories;
 
 export const AllProjectsData: Project[] = [
