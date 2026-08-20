@@ -14,16 +14,16 @@ export const DATA = {
 
 Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 
-3x Hackathon Winner. Campus FOSS Club Ex Lead.`,
+3x Hackathon Winner. Former Campus FOSS Club Lead.`,
 	avatarUrl: "https://github.com/rajatsandeepsen.png",
-	languages: ["Typescript", "Python", "SQL", "LaTeX"],
+	languages: ["TypeScript", "Python", "SQL", "LaTeX"],
 	libraries: [
 		"React",
 		"TailwindCSS",
 		"TensorFlow",
-		"React-Native",
-		"openCV",
-		"Tkinder",
+		"React Native",
+		"OpenCV",
+		"Tkinter",
 	],
 	frameworks: [
 		"Next.js",
@@ -42,7 +42,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 		"Figma",
 		"Zed Editor",
 	],
-	runtime: ["Bun", "UV", "Node.js", "PostgresSQL"],
+	runtime: ["Bun", "UV", "Node.js", "PostgreSQL"],
 	platforms: [
 		"Cloudflare",
 		"Vercel",
@@ -98,7 +98,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			},
 		},
 	},
-	volenteer: [
+	volunteer: [
 		{
 			company: "OpenAI Codex",
 			href: "https://www.codexnightline.in/",
@@ -108,7 +108,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			logoUrl: "https://github.com/codex.png",
 			start: "July",
 			end: "2026",
-			description: "Helped the participants as mentor and curated the finalist",
+			description: "Helped participants as a mentor and curated the finalists.",
 		},
 		{
 			company: "Sarvam AI",
@@ -120,7 +120,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			start: "Apr",
 			end: "2026",
 			description:
-				"Built 5 devTools and transfer to their official github org.",
+				"Built 5 developer tools and transferred them to their official GitHub organization.",
 		},
 		{
 			company: "Startup Bootcamp (IEDC)",
@@ -132,7 +132,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			start: "Jun 2022",
 			end: "Mar 2025",
 			description:
-				"Managed techical team & Worked on the development of IEDC Website & Infrastructure.",
+				"Managed the technical team and worked on the development of the IEDC website and infrastructure.",
 		},
 		{
 			company: "ASTHRA - The Tech Fest",
@@ -156,7 +156,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			start: "Jan 2025",
 			end: "Feb 2025",
 			description:
-				"Worked on the development of the frontend of the tedx website.",
+				"Worked on the development of the frontend of the TEDx website.",
 		},
 		{
 			company: "The Nexus Project",
@@ -216,7 +216,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			logoUrl: "https://findmycrush.app/logo.svg",
 			start: "Feb 2026",
 			end: "Present",
-			description: "Created a fun genz social media app for college students",
+			description: "Created a fun Gen Z social media app for college students.",
 		},
 		{
 			company: "Manolo Ventures",
@@ -227,7 +227,8 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			logoUrl: "https://github.com/manolo-in.png",
 			start: "Jul 2024",
 			end: "Present",
-			description: "Worked on various products like Jem, Manolo Capital etc",
+			description:
+				"Worked on various products like Jem and Manolo Capital, etc.",
 		},
 		{
 			company: "FIDE - Beckn Protocol",
@@ -239,7 +240,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			start: "May",
 			end: "2025",
 			description:
-				"Published a TS package, MCPs and built Agentic Server for new DEG project",
+				"Published a TypeScript package and MCPs, and built an agentic server for a new DEG project.",
 		},
 		{
 			company: "Gtech Mulearn",
@@ -258,7 +259,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			school: "St. Joseph's College of Engineering and Technology, Palai",
 			href: "https://www.sjcetpalai.ac.in/",
 			degree:
-				"Btech in Artificial Intelligence & Data Science, Minor in Robotics",
+				"BTech in Artificial Intelligence & Data Science, Minor in Robotics",
 			logoUrl:
 				"https://sjcetpalai.ac.in/wp-content/uploads/2019/01/SJCET-LOGO-Orginal-1200x1161.png",
 			start: "2021",

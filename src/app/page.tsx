@@ -58,7 +58,7 @@ export default function Page() {
 							height="500"
 							alt="Rajat's Banner"
 						/>
-						{/*<Gallary />*/}
+						{/*<Gallery />*/}
 					</div>
 				</div>
 			</section>
@@ -68,7 +68,7 @@ export default function Page() {
 				</BlurFade>
 				<BlurFade delay={BLUR_FADE_DELAY * 4}>
 					<Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-						{`${DATA.summary} \n\n From [${DATA.location}](${DATA.locationLink})\n\n Check out my [Resume](${DATA.resume}), [Projects and Contributions](${DATA.projects})`}
+						{`${DATA.summary} \n\n From [${DATA.location}](${DATA.locationLink})\n\n Check out my [Resume](${DATA.resume}) and [Projects and Contributions](${DATA.projects})`}
 					</Markdown>
 				</BlurFade>
 			</section>
@@ -97,26 +97,26 @@ export default function Page() {
 					))}
 				</div>
 			</section>
-			<section id="volenteer">
+			<section id="volunteer">
 				<div className="flex min-h-0 flex-col gap-y-3">
 					<BlurFade delay={BLUR_FADE_DELAY * 5}>
-						<h2 className="text-xl font-bold">Volenteering Experience</h2>
+						<h2 className="text-xl font-bold">Volunteering Experience</h2>
 					</BlurFade>
-					{DATA.volenteer.map((volenteer, id) => (
+					{DATA.volunteer.map((volunteer, id) => (
 						<BlurFade
-							key={volenteer.company}
+							key={volunteer.company}
 							delay={BLUR_FADE_DELAY * 6 + id * 0.05}
 						>
 							<ResumeCard
-								key={volenteer.company}
-								logoUrl={volenteer.logoUrl}
-								altText={volenteer.company}
-								title={volenteer.company}
-								subtitle={volenteer.title}
-								href={volenteer.href}
-								badges={volenteer.badges}
-								period={`${volenteer.start} - ${volenteer.end ?? "Present"}`}
-								description={volenteer.description}
+								key={volunteer.company}
+								logoUrl={volunteer.logoUrl}
+								altText={volunteer.company}
+								title={volunteer.company}
+								subtitle={volunteer.title}
+								href={volunteer.href}
+								badges={volunteer.badges}
+								period={`${volunteer.start} - ${volunteer.end ?? "Present"}`}
+								description={volunteer.description}
 							/>
 						</BlurFade>
 					))}
@@ -335,7 +335,7 @@ export default function Page() {
 								>
 									twitter
 								</Link>{" "}
-								or sent an{" "}
+								or send an{" "}
 								<Link
 									href={`mailto:${DATA.contact.email}`}
 									target="_blank"
