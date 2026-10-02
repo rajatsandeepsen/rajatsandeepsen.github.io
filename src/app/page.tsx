@@ -324,9 +324,9 @@ export default function Page() {
 								Get in Touch
 							</h2>
 							<p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Need help? Or just want to say hi?
+								Need help? or just want to say Hi?
 								<br />
-								DM on{" "}
+								DM me on{" "}
 								<Link
 									href={DATA.contact.social.X.url}
 									target="_blank"
@@ -335,15 +335,17 @@ export default function Page() {
 								>
 									twitter
 								</Link>{" "}
-								or send an{" "}
-								<Link
-									href={`mailto:${DATA.contact.email}`}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="text-green-500 hover:underline"
-								>
-									email
-								</Link>{" "}
+								{"email" in DATA.contact && (<>
+									or send an
+									<Link
+										href={`mailto:${DATA.contact.email}`}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-green-500 hover:underline"
+									>
+										email
+									</Link>
+								</>)}
 							</p>
 						</div>
 					</BlurFade>

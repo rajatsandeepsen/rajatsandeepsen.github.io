@@ -9,8 +9,8 @@ export const DATA = {
 	resume: "https://rajatsandeepsen.github.io/resume/",
 	location: "Thodupuzha, Kerala 🇮🇳",
 	locationLink: "https://www.google.com/maps/place/thodupuzha",
-	description: "Developer ⬟ Manolo",
-	summary: `Self-taught Full Stack Developer, App Developer, DevOps, AI Engineer, and Designer
+	description: "Senior Full Stack Developer",
+	summary: `Self-taught Full Stack + App Developer, DevOps, AI Engineer, and Designer
 
 Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 
@@ -35,6 +35,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 		"oRPC",
 	],
 	tools: [
+		"OpenToFu",
 		"Turborepo",
 		"Docker",
 		"GitHub Actions",
@@ -44,11 +45,11 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 	],
 	runtime: ["Bun", "UV", "Node.js", "PostgreSQL"],
 	platforms: [
+		"AWS",
 		"Cloudflare",
 		"Vercel",
 		"HuggingFace",
 		"GitHub",
-		"VPS",
 		"Expo EAS",
 		"Supabase",
 	],
@@ -58,7 +59,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 		{ href: "/hackathons", icon: TrophyIcon, label: "Hackathons" },
 	],
 	contact: {
-		email: "rajat@manolo.in",
+		// email: "rajat.in",
 		tel: "919846101882",
 		social: {
 			GitHub: {
@@ -208,12 +209,23 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 
 	work: [
 		{
+			company: "Finquo Versity",
+			href: "https://finquo.ai",
+			badges: [],
+			location: "Hybrid",
+			title: "Senior Full Stack Developer",
+			logoUrl: "https://github.com/finquo.png",
+			start: "Sep 2026",
+			end: "Present",
+			description: "Migrating entire infrastructure to AWS with OpenToFu",
+		},
+		{
 			company: "FindMyCrush App",
 			href: "https://findmycrush.app",
 			badges: [],
 			location: "Hybrid",
 			title: "Creator",
-			logoUrl: "https://findmycrush.app/logo.svg",
+			logoUrl: "https://github.com/findmycrush.png",
 			start: "Feb 2026",
 			end: "Present",
 			description: "Created a fun Gen Z social media app for college students.",
@@ -226,7 +238,7 @@ Freelancer, Open Source Contributor, FOSS Enthusiast & Tech Educator.
 			title: "Full Stack Developer",
 			logoUrl: "https://github.com/manolo-in.png",
 			start: "Jul 2024",
-			end: "Present",
+			end: "Aug 2026",
 			description:
 				"Worked on various products like Jem and Manolo Capital, etc.",
 		},
